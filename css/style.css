@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+  margin: 0;
+  font-family:  "Lora", serif;
+   
+}
+
+body {
+  margin: 0; 
+  font-family:  "Lora", serif;
+}
+
+.image {
+  background-image: url(/img/encabezado.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  
+}
+.image h1{
+  font-size: 40px;
+
+}
+
+
+
+nav {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #154360;  
+  padding: 10px;
+  gap: 20px;  
+}
+
+nav a {
+  text-decoration: none;  
+  color: white;  
+  padding: 10px;  
+}
+
+nav a:hover {
+  color: rgb(182, 66, 182);
+}
+
+nav a:active{
+  color:rgb(106, 18, 68);
+}
+
+.Parrafo1 {
+  padding: 20px; 
+  background-color: #f9f9f9; 
+}
+
+h1 {
+  font-size: 20px; 
+  margin: 20px; 
+  text-align: start; 
+  color: #154360;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px; 
+  color: #555; 
+  margin-bottom: 16px; 
+  line-height: 1.5;
+  margin-left: 10px; 
+}
+
+
+footer {
+  background-color: #2C3E50; 
+  color: white; 
+  padding: 15px; 
+  text-align: center; 
+}
+
+footer span {
+  font-size: 14px; 
+}
+
+.flexbox {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+.flex-item {
+  padding: 15px;
+  flex: 1 0 auto;
+  flex-grow: 1;
+  max-width: calc(31.45% - 20px);
+}
+
+/* MEDIA QUERIES - TABLET */
+@media screen and (max-width: 768px) {
+  .flex-item {
+    max-width: calc(50% - 20px); 
+  }
+}
+
+/* MEDIA QUERY - CELULARES */
+@media screen and (max-width: 480px) {
+  .flex-item {
+    max-width: calc(100% - 20px); 
+  }
+}
+
