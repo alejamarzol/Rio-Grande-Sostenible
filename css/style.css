@@ -11,7 +11,7 @@ body {
 }
 
 .image {
-  background-image: url(/img/encabezado.jpg);
+  background-image: url(/Rio-Grande-Sostenible/img/encabezado.jpg);
   display: flex;
   justify-content: center;
   align-items: center;
