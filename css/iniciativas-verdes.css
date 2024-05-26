@@ -1,57 +1,128 @@
-/* Estilos base */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: "Lora", serif;
+  margin: 0;
+  padding: 0;
+}
   
-  header {
-    background-color: #154360;
-    color: #fff;
+header {
+  background-color: #154360;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    text-align: center;
-  }
-  nav {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    background-color: #154360;  
-    padding: 10px;
-    gap: 20px;  
-  }
+main {
+  padding: 20px;
+  background-color: #f7f2f2;
+}
+
+nav {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #154360;  
+  padding: 10px;
+  gap: 20px; 
+  position: fixed; /* lo deja fijo */
+  top: 0; /* lo deja fijo arriba de todo */
+  width: 100%;
+  z-index: 1000;  /* lo pone por encima de todo */
+}
   
-  nav a {
-    text-decoration: none;  
-    color: white;  
-    padding: 10px;  
-  }
-  nav a:hover {
-    color: rgb(182, 66, 182);
-  }
+.flex-item {
+  display: flex; 
+  align-items: center;
+}
+
+.content {
+  flex: 1; 
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;  
+  color: white;  
+  padding: 10px;  
+}
+
+nav a:hover {
+  color: rgb(182, 66, 182);
+}
   
-  nav a:active{
-    color:rgb(106, 18, 68);
-  }
+nav a:active{
+  color:rgb(106, 18, 68);
+}
   
-  .imagen_encabezado {
+/*.imagen{
     width: 100%;
     height: auto;
     
-  }
+  }*/
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  margin-left: auto;
+}
  
-  h2 {
-    color: #154360;
+section {
+  background-color: #f7f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #154360;
+  border-bottom: 1px solid #dee2e6;
+}
+  
+p {
+  color: #6c757d;
+  line-height: 1.6;
+}
+  
+ul {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #2C3E50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+  
+footer span {
+  font-size: 14px;
+}
+  
+
+/* MEDIA QUERIES - TABLET */
+@media screen and (max-width: 768px) {
+  .flex-item {
+    max-width: calc(100% - 30px); 
+    flex-direction: column;
   }
-  
-  
-  footer {
-    background-color: #2C3E50;
-    color: white;
-    padding: 15px;
-    text-align: center;
+}
+
+/* MEDIA QUERY - CELULARES */
+@media screen and (max-width: 480px) {
+  .flex-item {
+    max-width: calc(100% - 20px); 
+    flex-direction: column;
   }
-  
-  footer span {
-    font-size: 14px;
-  }
-  
+
+  img {
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen al contenedor */
+}
+
+}
