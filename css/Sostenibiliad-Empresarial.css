@@ -1,0 +1,39 @@
+.p1::first-letter {font-size: 150%;}
+
+.imagen_izquierda
+{width:50%;
+max-height: 300px; min-height: 200px} 
+
+.leftcontainer2 {width:50%;}
+
+.s2 {  display: flex;
+  justify-content:space-between; height:max-content;}
+
+
+section.imagen_fondo {  
+  background-image:url("Rio-Grande-Sostenible\img\lampara 2.png")cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;}
+
+  .imagendefondo2 {
+    background-image: url("Rio-Grande-Sostenible\img\energia22.jpg")cornflowerblue;  
+    width: 100%;}
+
+
+ 
+    #sect1 {
+    background-image: url("Rio-Grande-Sostenible\img\energia22.jpg")cornflowerblue;  
+    color: #fff; position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+  }
+ 
+ 
+
+
+
+ 
