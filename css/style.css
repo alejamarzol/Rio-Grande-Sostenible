@@ -57,14 +57,8 @@ nav a:active{
   padding: 16px; 
   background-color: #f9f9f9; 
 }
-.ima-titulo{
-  background-image: url(/img/img/Aviacion-Naval.jpg);
-  
-  height: 200px;
-}
-
 h1 {
-  background-image: url(/img/img/imagen\ principal.jpeg);
+  background-image: url(/Rio-Grande-Sostenible/img/imagen\ principal.jpeg);
   border-radius: 5px;
   height: vh;
   font-size: 30px; 
@@ -83,7 +77,7 @@ h2{
   margin-bottom: 10px;
 }
 h3{
-  background-image: url(/img/img/Aviacion-Naval.jpg);
+  background-image: url(/Rio-Grande-Sostenible/img/Aviacion-Naval.jpg);
   font-size: 20px; 
   margin: 20px; 
   text-align:center; 
