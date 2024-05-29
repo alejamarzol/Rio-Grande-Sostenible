@@ -1,57 +1,138 @@
-/* Estilos base */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header {
-    background-color: #154360;
-    color: #fff;
+header {
+  margin-bottom: 20px;
+}
 
-    text-align: center;
-  }
-  nav {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    background-color: #154360;  
-    padding: 10px;
-    gap: 20px;  
-  }
-  
-  nav a {
-    text-decoration: none;  
-    color: white;  
-    padding: 10px;  
-  }
-  nav a:hover {
-    color: rgb(182, 66, 182);
-  }
-  
-  nav a:active{
-    color:rgb(106, 18, 68);
-  }
-  
-  .imagen_encabezado {
-    width: 100%;
-    height: auto;
-    
-  }
+main {
+  padding-top: 20px;
+  background-color: #f7f2f2;
+}
+
+.content {
+  flex: 1; 
+  margin-right: 20px;
+}
+
+.flex-item {
+  display: flex; 
+  flex-direction:column ;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: #e6ecf0;
+}
+
+.content_1 {
+  display: flex;
+  flex-direction: row-reverse;
+  flex: 1;
+}
+
+.content_1 p {
+  display: flex;
+  flex-direction: column;
+}
+
+.content_1 ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  text-align: justify;
+  list-style: circle; 
+}
+
+.imagen_1 {
+  width: 100%;
+  max-width: 430px;
+  height: auto;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
  
-  h2 {
-    color: #154360;
+.content_2 { 
+  margin-right: 20px;
+}
+
+.imagen_2 {
+  width: 100%;
+  max-width: 1180px;
+  height: auto;
+  border-radius: 8px;
+}
+
+section {
+  background-color: #f7f2f2;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+  
+p {
+  line-height: 1.6;
+}
+  
+ul {
+  color: rgb(82, 80, 80);
+  line-height: 1.6;
+  margin-left: 20px;
+}
+ 
+
+h1 {
+  background-image: url(/img/imagen\ principal.jpeg);
+  border-radius: 5px;
+  height: 40px;
+  font-size: 30px; 
+  margin: 20px; 
+  text-align:center; 
+  color:azure;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px #2c3e50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3{
+  background-image: url(/img/Aviacion-Naval.jpg);
+  border-radius: 5px;
+  font-size: 20px; 
+  margin: 20px;
+  height: 50px; 
+  text-align:center; 
+  color:#2C3E50;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 700px) {
+  .content_1 {
+    flex-direction: column; 
+    align-items: center;
   }
-  
-  
-  footer {
-    background-color: #2C3E50;
-    color: white;
-    padding: 15px;
-    text-align: center;
+
+  .content_1 .imagen_1 {
+    margin-left: 0;
+    margin-bottom: 20px; 
   }
-  
-  footer span {
-    font-size: 14px;
+
+  .content_1 ul {
+    margin-top: 20px; 
   }
-  
+}
+
+@media screen and (min-width: 480px) {
+  .flex-item {
+    max-width: calc(100% - 50px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-item {
+    max-width: calc(100% - 20px);
+  }
+}

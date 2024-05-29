@@ -11,7 +11,7 @@ body {
 }
 
 .image {
-  background-image: url(/Rio-Grande-Sostenible/img/encabezado.jpg);
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,8 +31,13 @@ nav {
   align-items: center; 
   background-color: #154360;  
   padding: 10px;
-  gap: 20px;  
+  gap: 10px; 
+  position: fixed; /* lo deja fijo */
+  top: 0; /* lo deja fijo arriba de todo */
+  width: 100%;
+  z-index: 1000;  /* lo pone por encima de todo */
 }
+
 
 nav a {
   text-decoration: none;  
@@ -49,18 +54,44 @@ nav a:active{
 }
 
 .Parrafo1 {
-  padding: 20px; 
+  padding: 16px; 
   background-color: #f9f9f9; 
+}
+.ima-titulo{
+  background-image: url(/img/Aviacion-Naval.jpg);
+  
+  height: 200px;
 }
 
 h1 {
+  background-image: url(/img/imagen\ principal.jpeg);
+  border-radius: 5px;
+  height: vh;
+  font-size: 30px; 
+  margin: 20px; 
+  text-align:center; 
+  color:azure;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px #2c3e50;
+}
+h2{
   font-size: 20px; 
   margin: 20px; 
-  text-align: start; 
-  color: #154360;
+  text-align:center; 
+  background-color: #2C3E50;
+  color:azure;
   margin-bottom: 10px;
 }
+h3{
+  background-image: url(/img/Aviacion-Naval.jpg);
+  font-size: 20px; 
+  margin: 20px; 
+  text-align:center; 
+ 
+  color:#2C3E50;
+  margin-bottom: 10px;
 
+}
 p {
   font-size: 16px; 
   color: #555; 
@@ -81,18 +112,102 @@ footer span {
   font-size: 14px; 
 }
 
-.flexbox {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap; 
+.containerPrincipal{
+  display: grid;
+  gap: 10px;
+  background-color: #e6ecf0;
+  margin: 20px;
+  padding: 10px;
+}
+  
+  
+.principal-item{
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  
+}
+.principal-item1 {
+  text-align: center;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  padding: 10px;
+}
+.principal-item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  text-align: center;
 }
 
-.flex-item {
-  padding: 15px;
-  flex: 1 0 auto;
-  flex-grow: 1;
-  max-width: calc(31.45% - 20px);
+.principal-item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  text-align: center;
 }
+.imagen-item2{
+clip-path: circle(60%);
+  width: 200px;
+  height: 200px;
+}
+.image-item3{
+  clip-path: circle(60%);
+  width: 200px;
+  height: 200px;
+}
+
+.ima-pie{
+  
+  height: 100px;
+}
+.containerSecundario{
+  display: grid;
+  gap: 20px;
+  background-color: #e6ecf0;
+  margin: 20px;
+  padding: 10px;
+}
+.secundario-item{
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+}
+.secundario-item1 {
+  text-align: center;
+  grid-column: 1/ span 2;
+  grid-row: 1;
+  padding: 10px;
+}
+.secundario-item2 {
+  grid-column: 2;
+  grid-row: 2/ span 2;
+ text-align:center;
+}
+
+
+.image-secu1{
+  clip-path: circle(60%);
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.image-secu2{
+  clip-path: circle(60%);
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.containerPrincipal-Videos{
+  display:flex;
+  background-color: #e6ecf0;
+  margin: 30px;
+  padding: 10px;
+  gap: 20px;
+  align-content: center;
+
+}
+
 
 /* MEDIA QUERIES - TABLET */
 @media screen and (min-width: 768px) {
