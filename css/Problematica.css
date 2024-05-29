@@ -1,76 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
-*{
-    margin: 0;
-    font-family:  "Lora", serif;
+
+.containerTerciario{
+    display: grid;
+  gap: 10px;
+  background-color: #e6ecf0;
+  margin: 50px;
+  padding: 10px;
 }
-
-body {
-    padding: 0;
-}
-
-p, li {
-    font-size: 16px; 
-    color: #555; 
-    margin-bottom: 16px; 
-    line-height: 1.5;
-    margin-left: 10px; 
-}
-
-h1 {
-    font-size: 20px; 
-    margin: 10px; 
-    color: #154360;
-    text-align: start; 
-}
-
-header {
-    display: flex;
-    flex-direction: column;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #154360;
-    padding: 10px;
-    gap: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-}
-
-
-nav a:hover {
-    color: rgb(182, 66, 182);
-  }
-  
-  nav a:active{
-    color:rgb(106, 18, 68);
-  }
-
-  .imagen_encabezado {
-    width: 100%;
-    height: auto;
-}
-
-section::first-letter {font-size: 150%;}
-
-main {
-    background-color: #f7f2f2;
+.principal-item{
+    text-align: center;
     padding: 20px;
+    font-size: 30px;
 }
-
-
-.texto3 {
-    display: flex;
-    justify-content:space-between;
+.terciario-item1{
+    text-align:justify;
+    grid-column: 1 / span 1;
+    grid-row: 1;
+    padding: 10px;
 }
+.terciario-item2 {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    text-align:center;
+  }
+  .terciario-item3 {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    text-align: center;
+  }
 
-.leftcontainer {width:30%}
 
 .imagen_derecha {
     width: 100%; 
@@ -78,16 +35,7 @@ main {
 
 }
 
-footer {
-    background-color: #2C3E50; 
-    color: white; 
-    padding: 15px; 
-    text-align: center; 
-}
-  
-footer span {
-    font-size: 14px; 
-}
+
 
 /* MEDIA QUERY PARA TABLET */
 @media (max-width: 768px) {
