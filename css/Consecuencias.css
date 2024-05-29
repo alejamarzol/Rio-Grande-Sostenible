@@ -1,0 +1,93 @@
+header {
+    margin-bottom: 20px;
+}
+  
+main {
+    padding-top: 20px;
+    background-color: #f7f2f2;
+}
+
+section {
+    background-color: #f7f2f2;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+    
+.flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    background-color: #e6ecf0;
+}
+
+.content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.imagen_1 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.imagen_2 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+h1 {
+    background-image: url(/img/imagen\ principal.jpeg);
+    border-radius: 5px;
+    height: 40px;
+    font-size: 30px; 
+    margin: 20px; 
+    text-align:center; 
+    color:azure;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    background-image: url(/img/Aviacion-Naval.jpg);
+    border-radius: 5px;
+    font-size: 20px; 
+    margin: 20px;
+    height: 50px; 
+    text-align:center; 
+    color:#2C3E50;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 480px){
+    .flex-item {
+        max-width: calc(100% - 50px);
+    }
+}
+  
+@media screen and (min-width: 1200px) {
+    .flex-item {
+        max-width: calc(100% - 20px); 
+        flex-direction: row;
+    }
+}
