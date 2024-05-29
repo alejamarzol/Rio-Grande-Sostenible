@@ -1,0 +1,128 @@
+
+body {
+  margin: 0; 
+  border: 0;
+  font-family:  "Lora", serif;
+  background-color:rgb(192, 240, 217);
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+  h2 {font-family: 'Courier New', Courier, monospace;
+    font-size: 30px; 
+    margin: 30px; 
+    text-align:center; 
+    margin-bottom: 30px;
+  }
+  
+  
+  .p1::first-letter {font-size: 150%;}
+
+.flexbox-0 {
+  background-image: url("..\img\naty\lampara 2.png");
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  color:#154360; 
+}
+
+#centrado { 
+text-align: center;
+font-style:italic; 
+margin: 30px; 
+margin-bottom: 50px;
+font-size: 100px; 
+}
+
+
+.imagen_izquierda {
+width:50%;
+max-height: 300px; 
+min-height: 200px} 
+
+.leftcontainer2 {width:50%;}
+.imagen_izquierda:hover {transform: scale(1.1);transition:5s;}
+
+.s2 {  display: flex;
+  justify-content:space-between; height:max-content;}
+
+
+.imagen_fondo {  
+  background-image: url("..\img\naty\lampara 2.png");
+  background-color:rgb(239, 230, 242);
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+  width: 100%;
+  height: 300 px;}
+  .imagen_fondo :hover {transform: scale(1.1);transition:5s;}
+ 
+  .flexbox1 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    color:rgb(21, 16, 57); 
+  }
+
+  .flex-item1 {
+    padding: 15px;
+    flex: 1 0 auto;
+    flex-grow: 1;
+    max-width: calc(31.45% - 20px);
+  }
+  
+    #contenedor_foto {
+    background-image: url("..\img\naty\energia menos cielo.png");
+    width:100%;
+    height: auto;
+    margin-bottom: 30px;
+    justify-items: flex-end ;flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+  .acciones {
+    justify-content:center;
+    align-items: center;
+     width:100%;
+     margin: 30px;
+    padding: 30px;
+    }
+  .acciones:hover {transform: scale(1.1);transition:5s;}
+
+
+  li::first-letter { font-size: 120%;}
+
+  .negro { background-color:rgb(17, 18, 17);
+    color: #ffffff; 
+    padding: 20px;
+  }
+  
+  .button {
+    background-color: rgb(224, 172, 243);
+    outline: 1px solid #c878dc;
+    border-radius: 6px;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;}
+
+    .logo {
+      width:30%;
+      display: flex;
+      flex-direction:column-reverse;
+      align-items: center;
+      justify-content:center;
+      text-align:center;
+      width: 100%;
+      gap: 16px;}
+   .logo:hover {transform: scale(1.1);transition:5s;}
+   
+  
+footer {
+  background-color: #2C3E50; 
+  color: white; 
+  padding: 15px; 
+  text-align: center; 
+}
