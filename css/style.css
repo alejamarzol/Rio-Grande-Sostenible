@@ -63,7 +63,7 @@ nav a:active{
   height: 200px;
 }
 
-.h1Principal {
+h1 {
   background-image: url(/img/imagen\ principal.jpeg);
   border-radius: 5px;
   height: vh;
