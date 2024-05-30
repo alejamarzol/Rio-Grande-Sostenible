@@ -40,41 +40,7 @@
   width: 400px;
   height: 300px;
   }
-  .container-4{
-    display:grid;
-  background-color: #e6ecf0;
-  margin: 20px;
-  padding: 10px;
-  text-align: center;
-  }
-  .item4-4{
-    font-size: 13px;
-  }
-  
-  .item5-4{
-    grid-column: 2;
-    grid-row: 2;
-}
-.image1-4{
-    display: block;
-  margin: 0 auto;
-  width: 300px;
-  clip-path: circle(50%);
-}
-.image2-4{
-    display: block;
-  margin: 0 auto;
-  width: 300px;
-  clip-path: circle(50%);
-}
-.image3-4{
-    display: block;
-    margin: 0 auto;
-    width: 700px;
-    height: 300px;
-    border-radius: 50%;
-}
- /* MEDIA QUERY PARA TABLET */
+  /* MEDIA QUERY PARA TABLET */
 @media (max-width: 768px) {
     .leftcontainer {
         flex-direction: column;
