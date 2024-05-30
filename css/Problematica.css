@@ -40,8 +40,6 @@
   width: 400px;
   height: 300px;
   }
- 
-
   /* MEDIA QUERY PARA TABLET */
 @media (max-width: 768px) {
     .leftcontainer {
