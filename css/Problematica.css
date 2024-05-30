@@ -75,9 +75,7 @@
     border-radius: 50%;
 }
 
-
-
-  /* MEDIA QUERY PARA TABLET */
+/* MEDIA QUERY PARA TABLET */
 @media (max-width: 768px) {
     .leftcontainer {
         flex-direction: column;
