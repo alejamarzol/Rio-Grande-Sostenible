@@ -58,13 +58,13 @@ nav a:active{
   background-color: #f9f9f9; 
 }
 .ima-titulo{
-  background-image: url(../img/Aviacion-Naval.jpg);
+  background-image: url(img/Aviacion-Naval);
   
   height: 200px;
 }
 
 h1 {
-  background-image: url(../img/imagen\ principal.jpeg);
+  background-image: url(img/imagen-principal);
   border-radius: 5px;
   height: vh;
   font-size: 30px; 
