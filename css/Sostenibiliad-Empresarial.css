@@ -265,6 +265,7 @@ image{
     header nav {
       width: 55%;
       height: 100%;
+      left: -100%;
       margin:0;
       position:fixed;
     }
@@ -282,6 +283,7 @@ image{
   .menu_bar .bt-menu {
     display: block;
     padding: 20px;
+    color: #ccc;
     background:#2C3E50 ;
     text-decoration: none;
     font-weight:bold;
@@ -291,6 +293,6 @@ image{
 .menu_bar span {
   float: right;
   font-size: 40px;
-  color: #ddf9f9;
+  color: #e4f6f6;
  }
   }

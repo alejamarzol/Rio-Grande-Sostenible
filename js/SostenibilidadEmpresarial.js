@@ -29,3 +29,6 @@ alert (`Nos visitó ${nombreCompleto}, de Nacionalidad ${Nacionalidad}, de la ci
     ${Comentarios2}.`);
 
 alert (`${nombreCompleto} ¡Gracias por visitarnos y dejarnos tus comentarios! ❤️ `);
+
+
+$()
