@@ -1,4 +1,4 @@
-let nombreCompleto= prompt(`Queremos saber tu opinion sobre SOSTENIBILIDAD EN RIO GRANDE, por favor dejanos tu datos a continuacion.    
+/*let nombreCompleto= prompt(`Queremos saber tu opinion sobre SOSTENIBILIDAD EN RIO GRANDE, por favor dejanos tu datos a continuacion.    
      ¿Cual es tu nombre completo?`);
 
 if (nombreCompleto=="") {alert (`No ingresaste tu Nombre Completo`);} nombreCompleto= prompt(`Queremos saber tu opinion sobre SOSTENIBILIDAD EN RIO GRANDE, por favor dejanos tu datos a continuacion.    
