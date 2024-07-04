@@ -58,13 +58,13 @@ nav a:active{
   background-color: #f9f9f9; 
 }
 .ima-titulo{
-  background-image: url(/img/Aviacion-Naval.jpg);
+  background-image: url(../img/Aviacion-Naval.jpg);
   
   height: 200px;
 }
 
 h1 {
-  background-image: url(/img/imagen\ principal.jpeg);
+  background-image: url(../img/imagen-principal.jpg);
   border-radius: 5px;
   height: vh;
   font-size: 30px; 
@@ -83,7 +83,7 @@ h2{
   margin-bottom: 10px;
 }
 h3{
-  background-image: url(/img/Aviacion-Naval.jpg);
+  background-image:url(../img/Aviacion-Naval.jpg);
   font-size: 20px; 
   margin: 20px; 
   text-align:center; 
@@ -211,20 +211,14 @@ clip-path: circle(60%);
 
 /* MEDIA QUERIES - TABLET */
 @media screen and (min-width: 768px) {
-  .flex-item {
-    min-width: calc(50% - 20px); 
-  }
+  .principal-item{
+    max-width: calc(100% - 50px);
 }
-/* MEDIA QUERIES - desktop */
-@media screen and (min-width: 1020px) {
-  .flex-item {
-    min-width: calc(50% - 20px); 
-  }
 }
 
 /* MEDIA QUERY - CELULARES */
 @media screen and (min-width: 320px) {
-  .flex-item {
+  .principal-item{
     min-width: calc(100% - 30px); 
   }
 }
