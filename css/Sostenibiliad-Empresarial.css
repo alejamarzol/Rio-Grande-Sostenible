@@ -4,10 +4,6 @@
   font-family:  "Lora", serif;
 }
 
-header {
-  margin-bottom: 20px;
-}
-
 main {
   background-color: #ddf9f9;
   text-align: justify;
@@ -27,7 +23,8 @@ image{
   align-items: center;
   height: 300px;width: 100%;
   }
-  nav {
+
+  header nav {
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -38,13 +35,26 @@ image{
     top: 0; /* lo deja fijo arriba de todo */
     width: 100%;
     z-index: 1000;  /* lo pone por encima de todo */
+    margin-right: 20px;
   }
   
-  nav a {
+  header nav ul {
+    overflow:hidden;
+    list-style: none;
+  }
+  header nav ul li {
+    float:left;
+  }
+  header nav ul li a {
     text-decoration: none;  
     color: white;  
-    padding: 10px;  
-    z-index: 1000;
+    padding: 20px;  
+    z-index: 1000; 
+    display: block;
+    margin-right: 10px;
+  }
+  header nav ul li a spam {
+    margin-right: 10px;
   }
   
   nav a:hover {
@@ -135,8 +145,8 @@ image{
   
   
   #fondo {  
-    background-color:transparent;
-    background-image: url(/img/naty/sustentabilidad-hacia-el-2025.jpg);
+    background-color:#c878dc;
+    background-image: url(../img\sustentabilidad-hacia-el-2025.jpg);
     width: 100%;
     height: auto;
     justify-content: center;
@@ -182,6 +192,16 @@ image{
       color: #ffffff; 
       padding: 20px;
     }
+
+    form {
+      /* Centrar el formulario en la página */
+      margin: 2 auto;
+      width:auto;
+      /* Esquema del formulario */
+      padding: 1%;
+      border: 1px solid #ccc;
+      border-radius: 1em;}
+    
     
     .button {
       background-color: rgb(242, 230, 246);
@@ -190,7 +210,12 @@ image{
       padding: 8px;
       justify-content: center;
       align-items: center;}
-  
+
+      .button2 {   
+        justify-content: center;
+        padding: 20px;
+      }
+
       .logo {
         width:30%;
         display: flex;
@@ -220,4 +245,54 @@ image{
   }
   footer div a:active{
     color:rgb(106, 18, 68);
+  }
+  footer div a spam { margin-right: 10px;}
+
+
+  @media screen and (min-width: 480px) {
+    .flex-item {
+      max-width: calc(100% - 50px);
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .flex-item {
+      max-width: calc(100% - 20px);
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    header nav {
+      width: 55%;
+      height: 100%;
+      left: -100%;
+      margin:0;
+      position:fixed;
+    }
+  header nav ul li {
+    display:block;
+    float:none;
+    border-bottom:1px solid color white;
+  
+  }
+  .menu_bar {
+    display: block;
+    width: 100%;
+    background: #2C3E50;
+  }
+  .menu_bar .bt-menu {
+    display: block;
+    padding: 20px;
+    color: #ccc;
+    background:#2C3E50 ;
+    text-decoration: none;
+    font-weight:bold;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+.menu_bar span {
+  float: right;
+  font-size: 40px;
+  color: #e4f6f6;
+ }
   }
