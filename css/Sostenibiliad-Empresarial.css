@@ -66,11 +66,11 @@ image{
   }
   
   h1 {
-    background-image: url(/img/imagen\ principal.jpeg);
+    background-image: url(../img/imagen/ principal.jpeg);
     height: 40px;
     font-size: 30px; 
     margin: 40px; 
-    margin-inline: 20px;
+    margin-inline: 0px;
     text-align:center; 
     color:azure;
     margin-bottom: 20px;
