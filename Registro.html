@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimun-scale=1.0">
+    <title>Registro</title>
+    <link rel="icon"  href="/img/Logo.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css\Registro.css">
+    <link rel="stylesheet" href="fonts.css">
+</head>
+<body>
+    <header>
+    <div class="headerbutton"></div>
+    <div class="nav-menu">
+        
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="menu-icon"><img src=".\img\naty\menu3.png" alt="menu"></i>
+        </label>
+    <nav>
+        <ul>
+        
+        <li><a href="index.html"><spam class= "icon-home"></spam>Inicio</a></li>
+        <li><a href="Problematica.html"><spam class= "icon-earth"></spam>Problematica</a> </li>
+        <li><a href="Consecuencias.html"><spam class= "icon-binoculars"></spam>Consecuencias</a> </li>
+        <li><a href="iniciativas-verdes.html"><spam class= "icon-leaf"></spam>Iniciativas Verdes</a></li>
+        <li><a href="Sostenibilidad-Empresarial.html"><spam class= "icon-stats-dots"></spam>Sostenibilidad Empresarial</a></li><!-- esta pagina -->
+        <li><a class="registrobtn" href="Registro.html">🌟Registro</a></li>
+        </ul>
+    </nav>
+    </div>
+</header>
+
+<main></main>
+    <h2>¿Querés mantenerte actualizado/@? </h2>
+
+<section class="general">
+
+    <!--SESION-->     
+    <section id="sesion"> 
+        <form action=" " class="formInicioSesion" id="form-InicioSesion">
+            <h4>🌟-<strong>INICIO DE SESIÓN</strong></h4>
+    
+            <input class="controles" type="email" placeholder="Email:" name="email" id="email" required>
+            <input class="controles" type="password" placeholder="Contraseña:" name="password" id="password" required>
+    
+            <li class="aclaracion">La contraseña debe contener al menos 6 caracteres.</li>
+    
+            <div >
+                <input class="button2" type="submit" value="Enviar">
+                <input class="button2" type="reset" vale="Cancelar">
+            </div>
+        </form>
+         <br>
+        <div class='Respuesta' id="divContenidoSesion"></div>
+    </section>
+
+    <!--REGISTRO-->
+    <section id="registro">
+        <form action=" " class="formRegistro" id="form-registro">
+            <h4>Dejanos tus datos... <strong>REGISTRATE</strong></h4>
+    
+            <input class="controles" type="text" placeholder="Nombre y Apellido:" name="Name" id="Name" required>
+            <input class="controles" type="tel" id="tel" placeholder="Numero de Contacto:" name="Tel" id="Tel" required>
+            <input class="controles" type="number" placeholder="Edad:" name="Edad" min="10" max="100" id="Edad" required>
+            <input class="controles" type="date" placeholder="Fecha de Nacimiento:" name="FEchaDeNacimiento" id="FechaNac" required>
+            <input class="controles" type="email" placeholder="Email:" name="Email" id="Email" required>
+            <input class="controles" type="password" placeholder="Contraseña:" name="Password" id="Password" required>
+          
+            <li class="aclaracion">La contraseña debe contener al menos 6 caracteres.</li>
+        
+            <P>Estoy de acuerdo con <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/texact.htm" target="_blank"> Terminos y Condiciones</a></P>
+            
+            <div >
+                <input class="button2" type="submit" value="Enviar">
+                <input class="button2" type="reset" vale="Cancelar">
+            
+            </div>
+        </form>
+        <br>
+        <div class='respuesta' id="divContenidoRegistro"></div>
+       
+    </section>
+</section>
+
+</main>
+    
+    <footer class="footertodo">
+        
+        <div class="contactos">
+            <h5>Contacta con nuestro Equipo:</h5>
+            <a href="https://web.whatsapp.com/" target="_blank"><spam class= "icon-phone"></spam>02964-603214 </a>
+            <a href="https://mail.google.com/mail/" target="_blank"><spam class= "icon-mail"></spam>rg.sostenible@gmail.com</a>
+        </div>
+        <div class="footerlinck">
+            <a href="index.html"><spam class= "icon-home"></spam>Inicio </a>
+            <a href="https://www.facebook.com/" target="_blank"><spam class= "icon-facebook2"></spam></a>
+            <a href="https://x.com/i/flow/login" target="_blank"><spam class= "icon-twitter"></spam></a>
+        </div>
+      
+            <h3>Tierra Del Fuego</h3>
+        </div>
+            <span>&copy;2024 Río Grande Sostenible</span>
+    </footer>
+    <script src="js\Registro.js"></script>
+    <script src="js\Usuario.js"></script>
+    <script src="js\Administradores.js"></script>
+</body>
+</html>
