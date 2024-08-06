@@ -13,31 +13,41 @@
 
 <body>
     <header>
-        <div class="menu_bar">
-            <a href="#" class="bt-menu"><span class="icon-list2"></span>Menu</a>
+        <div class="headerbutton"></div>
+        <div class="nav-menu">
+            
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src=".\img\naty\menu3.png" alt="menu"></i>
+            </label>
         <nav>
             <ul>
+            
             <li><a href="index.html"><spam class= "icon-home"></spam>Inicio</a></li>
             <li><a href="Problematica.html"><spam class= "icon-earth"></spam>Problematica</a> </li>
             <li><a href="Consecuencias.html"><spam class= "icon-binoculars"></spam>Consecuencias</a> </li>
             <li><a href="iniciativas-verdes.html"><spam class= "icon-leaf"></spam>Iniciativas Verdes</a></li>
             <li><a href="Sostenibilidad-Empresarial.html"><spam class= "icon-stats-dots"></spam>Sostenibilidad Empresarial</a></li><!-- esta pagina -->
-        </ul>
+            <li><a class="registrobtn" href="Registro.html">🌟Registro</a></li>
+            </ul>
         </nav>
+        </div>
     </header>
 
 <main>
+
     <section>
       <!--titulo principal -->
       <h1>Río Grande Sostenible</h1>
 
     <div class="flexbox-0"> 
-        
         <img src="img\naty\lampara 2.png" alt="sostenibles">
+    </div>
+    <div class="leftcontainer1">
         <p class="p2">La sostenibilidad empresarial es un enfoque que considera no solo la rentabilidad financiera, sino también el impacto ambiental y social de las operaciones de una empresa. Aquellas organizaciones que adoptan prácticas sostenibles pueden obtener beneficios tanto a corto como a largo plazo.</p>
-       
-        <p>Las Ventajas son:</p>
 
+        <p class="p2">Las Ventajas son:</p>
+    </div>
        <div id="fondo">
          <ol class="flexbox1">
             <li class="flex-item1"><strong>Reducción de costos a corto plazo:</strong> Las empresas sostenibles pueden reducir sus costos operativos al implementar medidas como la eficiencia energética, la gestión responsable de recursos naturales y la minimización de residuos. Estas acciones no solo benefician al medio ambiente, sino que también mejoran la rentabilidad al disminuir los gastos.</li>
@@ -60,7 +70,7 @@
 
     <section class="s2">
 
-        <img class="imagen_izquierda" src="img\naty\monedas.png" alt="imagen a la izquierda">
+      <img class="imagen_izquierda" >
     <div class="leftcontainer2">
             
         <p class="p2">En la actualidad, la rentabilidad es una métrica que siempre se coloca en el centro del escenario. Y es comprensible, ya que todas las organizaciones tienen como objetivo principal generar ganancias. Sin embargo, en la búsqueda implacable de cifras positivas en los estados financieros, a veces se pasan por alto aspectos igualmente cruciales pero más discretos: los aspectos e impactos ambientales.</p>
@@ -75,7 +85,7 @@
     <div class="negro">
         <h2>Analisis de Indusdrias</h2>
         <p class="p1">Teniendo en cuenta las características del negocio de muchas compañías industriales que se encuentran en Rio Grande, esta menor prioridad de las iniciativas medioambientales es quizá comprensible. Los ciclos de vida más largos de los productos, los complejos procesos de fabricación, los exigentes requisitos de los clientes y las aplicaciones de misión crítica hacen que la implementación de programas de sostenibilidad sea muy compleja. Hasta la fecha, las compañías industriales han tenido mayores obstáculos y menos incentivos para elegir un camino más ecológico.</p>
-        <p class="p1">Analizando factores como:
+        <p class="p1">Analizando factores como:</p>
      <ul>
         <li>Consumo de energía</li>
         <li>Emisiones de carbono</li>
@@ -86,17 +96,18 @@
         <p class="p1">Recomendamos, por lo tanto, que las industrias de Rio Grande lleven la cuestión sostenible a un nuevo nivel, que sería la sostenibilidad empresarial, cuando se refiere a toda la operación de la empresa: de la concepción del producto a los servicios, pasando por la producción con materiales certificados, reducción del desperdicio y, finalmente, el descarte por el consumidor.</p>
     </div> 
 
-    <div id="contenedor_foto">
-        <img src="img\naty\energia menos cielo.png" alt="imagen de industrias sostenibles">
+    <div>
+    <video width="100%" autoplay="autoplay" controls>
+    <source src="img\naty\video sostenibilidad.mp4" type="video/mp4"></video>
     </div>
     
         <h2>Conoce Algunas Acciones</h2>
 
-    <section class="logo">
+    <section class="logo2">
         <img src="img\Logo.ico" alt="logo">
 
     <div class="button">
-        <a href="Sostenibilidad-Empresarial.html">Ayudenos con sugerencias</a>  
+        <a href="https://mail.google.com/mail/" target="_blank">Ayudenos con sugerencias</a>  
     </div>  
     </section>
     
@@ -110,45 +121,72 @@
       </ul>
     </section>  
 
- <h2>¿Querés mantenerte actualizado/@? </h2>
- <p>Dejanos tus datos...</p>
-    <form action="Datos">
-        <ul>
-            <li>
-        <label for="email">Email:</label>
-        <input type="email" name="email" required></li>
-            <li>
-        <label for="tel">Numero de Contacto</label>
-        <input type="tel" id="tel" name="tel" required></li>
-        <li>
-        <laber for="edad">Edad</laber>
-        <input type="number" name="edad" min="10" max="100"></li>
-        <li>
-        <label for="FEchaDeNacimiento">Fecha de Nacimiento</label>
-        <input type="date" name="FEchaDeNacimiento"></li>
-        
-        <div class="button2">
-            <button type="submit">Enviar</button>
+<!-- <h2>¿Querés mantenerte actualizado/@? </h2>
+<section class="general">
+ 
+<section id="sesion"> 
+    <form action=" " class="formInicioSesion" id="form-InicioSesion">
+        <h4>🌟-<strong>INICIO DE SESIÓN</strong></h4>
+
+        <input class="controles" type="email" placeholder="Email:" name="email" id="email" required>
+        <input class="controles" type="password" placeholder="Contraseña:" name="password" id="password" required>
+
+        <li class="aclaracion">La contraseña debe contener al menos 6 caracteres.</li>
+
+        <div >
+            <input class="button2" type="submit" value="Enviar">
+            <input class="button2" type="reset" vale="Cancelar">
         </div>
-        
-    </ul>
     </form>
+     <br>
+    <div class='Respuesta' id="divContenidoSesion"></div>
+</section>
 
+<section id="registro">
+    <form action=" " class="formRegistro" id="form-registro">
+        <h4>Dejanos tus datos... <strong>REGISTRATE</strong></h4>
 
-    <div>
-        <h3>Tierra Del Fuego</h3>
+        <input class="controles" type="text" placeholder="Nombre y Apellido:" name="Name" id="Name" required>
+        <input class="controles" type="tel" id="tel" placeholder="Numero de Contacto:" name="Tel" id="Tel" required>
+        <input class="controles" type="number" placeholder="Edad:" name="Edad" min="10" max="100" id="Edad" required>
+        <input class="controles" type="date" placeholder="Fecha de Nacimiento:" name="FEchaDeNacimiento" id="FechaNac" required>
+        <input class="controles" type="email" placeholder="Email:" name="Email" id= "Email" required>
+        <input class="controles" type="password" placeholder="Contraseña:" name="Password" id="Password" required>
+      
+        <li class="aclaracion">La contraseña debe contener al menos 6 caracteres.</li>
+    
+        <P>Estoy de acuerdo con <a href="https://servicios.infoleg.gob.ar/infolegInternet/anexos/60000-64999/64790/texact.htm" target="_blank"> Terminos y Condiciones</a></P>
+        
+        <div >
+            <input class="button2" type="submit" value="Enviar">
+            <input class="button2" type="reset" vale="Cancelar">
+        
+        </div>
+    </form>
+    <br>
+    <div class='respuesta' id="divContenidoRegistro"></div>
+   
+</section>
+</section>
+-->
+
+<footer class="footertodo">
+    
+    <div class="contactos">
+        <h5>Contacta con nuestro Equipo:</h5>
+        <a href="https://web.whatsapp.com/" target="_blank"><spam class= "icon-phone"></spam>02964-603214 </a>
+        <a href="https://mail.google.com/mail/" target="_blank"><spam class= "icon-mail"></spam>rg.sostenible@gmail.com</a>
     </div>
-
-</main>
-
-<footer >
     <div class="footerlinck">
         <a href="index.html"><spam class= "icon-home"></spam>Inicio </a>
-        <a href="Sostenibilidad-Empresarial.html"><spam class= "icon-facebook2"></spam>facebook </a>
-        <a href="Sostenibilidad-Empresarial.html"><spam class= "icon-twitter"></spam>Twitter</a>
+        <a href="https://www.facebook.com/" target="_blank"><spam class= "icon-facebook2"></spam></a>
+        <a href="https://x.com/i/flow/login" target="_blank"><spam class= "icon-twitter"></spam></a>
+    </div>
+  
+        <h3>Tierra Del Fuego</h3>
     </div>
         <span>&copy;2024 Río Grande Sostenible</span>
 </footer>
-     <script src="js\SostenibilidadEmpresarial.js"></script>
+     <script src="js\Registro.js"></script>
 </body>
 </html>
