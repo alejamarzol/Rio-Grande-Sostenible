@@ -35,28 +35,27 @@ alert (`${nombreCompleto} ¡Gracias por visitarnos y dejarnos tus comentarios! �
 
 
 // REGISTRO:
+window.addEventListener('load', function(){
+
+dbUsuarios = JSON.parse (localStorage.getItem ('usuarios'))
+ //console.log(dbUsuarios);
 
 
-let dbUsuarios = JSON.parse(localStorage.getItem('usuarios'))
-// console.log(dbUsuarios);
 
- window.addEventListener('load', function(){
-    
+ let inputName = document.querySelector('#Name');
+ let inputTel = document.querySelector('#Tel');
+ let inputEdad = document.querySelector('#Edad');
+ let inputFechaDeNacieminto = document.querySelector('#fechaNac');
+ let inputEmail = document.querySelector('#Email');
+ let inputContraseña = document.querySelector('#Password');
+
+ let divContenido = document.querySelector('#divContenidoRegistro');
+
+
+ document.getElementById('form-registro').addEventListener('submit', function(event){
  
-     let formulario = document.getElementById('form-registro');
-     let inputName = document.querySelector('#Name');
-     let inputTel = document.querySelector('#Tel');
-     let inputEdad = document.querySelector('#Edad');
-     let inputFechaDeNacieminto = document.querySelector('#fechaNac');
-     let inputEmail = document.querySelector('#Email');
-     let inputContraseña = document.querySelector('#Password');
-    
-     let divContenido = document.querySelector('#divContenidoRegistro');
- 
-     formulario.addEventListener('submit', function(event){
- 
-         event.preventDefault();
- 
+        event.preventDefault();
+
          let errores =[];
          let usuarioEncontrado = false;
          let usuario;

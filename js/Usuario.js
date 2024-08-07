@@ -1,23 +1,22 @@
 /*INICIO DE SESION*/ 
-
-
-
-
 window.addEventListener('load', function(){
 
-    let dbUsuarios= JSON.parse(localStorage.getItem('usuarios')) 
-   
-    let formulario = document.getElementById('form-InicioSesion');
-       let inputEmail= document.querySelector('#email');
-       let inputContraseña = document.querySelector('#password');
-    let divContenido = document.querySelector('#divContenidoSesion');
-   
-       formulario.addEventListener('submit', function(event){
+dbUsuarios= JSON.parse(localStorage.getItem('usuarios')) 
+//console.log(dbUsuarios);
+const user = sessionStorage.getItem('usuario')
+
+
+let inputEmail= document.querySelector('#email');
+let inputContraseña = document.querySelector('#password');
+let divContenido = document.querySelector('#divContenidoSesion');
+    
+ document.getElementById('form-InicioSesion').addEventListener('submit', function(event){
    
            event.preventDefault();
    
+         
            let errores = [];
-           let usuarioEncontrado= false;
+           let usuarioEncontrado = false;
            let nombreDelUsuario;
    
            for(let i=0; i< dbUsuarios.length ; i++){
@@ -27,15 +26,22 @@ window.addEventListener('load', function(){
                        usuarioEncontrado = true;
                    } else {
                        errores.push('La contraseña no coincide con la registrada!') }
-               }
+               }               
+           }
 
-               
-           }
+           for(let i=0; i< dbUsuarios.length ; i++){
+        if(inputContraseña.value.length < 6){
+        errores.push('La contraseña debe contener al menos 6 caracteres.');
+        (document.getElementById('password').style.borderColor = "red");     
+       }else {document.getElementById('password').style.borderColor = "#1f53c5"};
+    }
+    
             //Esto limpia el div donde se colocan las respuestas, al eliminar los nodos hijos del elemento
-            while (divContenido.firstChild) {
-               divContenido. removeChild(divContenido.firstChild);
-           }
-   
+         while(divContenido.firstChild) 
+            {divContenido.removeChild(divContenido.firstChild);}
+
+       
+
            if (errores.length > 0) {
                let ulErrores = document.createElement('ul');
                for(let i = 0; i < errores.length; i++){
@@ -43,22 +49,17 @@ window.addEventListener('load', function(){
                }
                divContenido.appendChild(ulErrores);
            } else {
-               if(usuarioEncontrado === true){
-                   let mensajeDeBienvenida = document.createElement('p5');
-                   sessionStorage.setItem('usuario', nombreDelUsuario);
-                   mensajeDeBienvenida.innerHTML = `Bienvenid@ ${sessionStorage.getItem('usuario')} a nuestra página de Sostenibilidad en Rio Grande`;
-                   divContenido.appendChild(mensajeDeBienvenida);
-               }
+            if(usuarioEncontrado === true){
+                alert('Bienvenid@ a nuestra página 💚')
+                let mensajeDeBienvenida = document.createElement('p');
 
-               dbUsuarios.push(usuario)
- 
-               localStorage.setItem('usuarios', JSON.stringify(dbUsuarios));
-               sessionStorage.setItem('usuario', inputName.value);
-
-               if(usuarioEncontrado === false){
-                   alert(`Bienvenid@ a nuestra página!! Le sugerimos registrarse.`);
+                sessionStorage.setItem('usuario', nombreDelUsuario);
+                mensajeDeBienvenida.innerHTML = `Bienvenid@ ${sessionStorage.getItem('usuario')} a nuestra página de Sostenibilidad - Rio Grande`;
+                divContenido.appendChild(mensajeDeBienvenida);
+            }
+           if (usuarioEncontrado === false){
+            alert(`Bienvenid@ a nuestra página de Sostenibilidad!! Le sugerimos registrarse.`);
                }
-           }
+}})
    
        })
-   })
