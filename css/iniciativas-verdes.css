@@ -11,10 +11,8 @@
   margin: 20px;
   padding: 10px;
   background-color: #e6ecf0;
-  width: 100%;
+  text-align: center;
 }
-
-
 
 .content_1 {
   display: flex;
@@ -30,17 +28,22 @@
 .content_1 ul {
   display: flex;
   flex-direction: column;
-  padding-left: 10px;
+  padding-left: 60px;
   text-align: justify;
   list-style: circle;
 }
 
+.content_1 ul li {
+  margin-bottom: 20px;
+}
+
 .imagen_1 {
   width: 100%;
-  max-width: 430px;
+  max-width: 420px;
   height: auto;
   border-radius: 8px;
-  margin: 20px 30px 20px 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
 }
 
 .content_2 {
@@ -78,11 +81,12 @@ ul {
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .eco-container .content_1 p {
-  margin-bottom: 10px;
+  margin: 10px;
+  margin-left: 30px;
 }
 
 .eco-container .image-container {
@@ -90,7 +94,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  margin: 10px;
 }
 
 .eco-container .image-container img {
@@ -101,7 +105,9 @@ ul {
 .eco-container .btn-container {
   margin-top: 10px;
   display: flex;
-  justify-content: center;
+  align-items: center; 
+  justify-content: center; 
+  width: 100%; 
 }
 
 .eco-container .btn-container button {
@@ -116,111 +122,21 @@ ul {
   background-color: #253342;
 }
 
-/* MEDIA QUERIES */
-
-/* CELULAR */
-@media screen and (max-width: 576px) {
-  .eco-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .eco-container .content_1 {
-    margin-right: 0;
-  }
-
-  .eco-container .image-container {
-    margin-top: 20px;
-  }
-
-  .eco-container .btn-container {
-    justify-content: center;
-    width: 100%;
-  }
-
+/* ORDENADOR */
+@media screen and (min-width: 1200px) {
   .content_1 {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row-reverse;
+    align-items: flex-start;
   }
 
-  .content_1 .imagen_1 {
-    margin-left: 0;
-    margin-bottom: 20px;
-  }
-
-  .content_1 ul {
-    margin-top: 20px;
-  }
-
-  header {
-    flex-direction: column;
-  }
-
-  
-  .checkbtn {
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-    z-index: 1001;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #154360;
-    padding-top: 10px;
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-  }
-
-  /* VISIBILIDAD DEL ICONO DE MENU */ 
-  #check:checked ~ nav {
-    display: flex;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    height: calc(100% - 60px);
-  }
-
-  nav ul li {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    margin: 0;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-  }
-
-  nav a:hover {
-    color: rgb(190, 244, 244);
-  }
-
-  nav a:active {
-    color: #1f53c5;
+  .imagen_1 {
+    margin-left: 20px;
+    margin-bottom: 0;
   }
 }
 
 /* TABLET */
-@media screen and (max-width: 786px) {
+@media screen and (min-width: 480px) and (max-width: 785px) {
   .eco-container {
     flex-direction: column;
     align-items: center;
@@ -244,8 +160,8 @@ ul {
     align-items: center;
   }
 
-  .content_1 .imagen_1 {
-    margin-left: 0;
+  .imagen_1 {
+    margin-left: 30px;
     margin-bottom: 20px;
   }
 
@@ -253,11 +169,15 @@ ul {
     margin-top: 20px;
   }
 
+  .content_1 ul {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  
   header {
     flex-direction: column;
   }
 
-  /* HACE VISIBLE EL ICONO DE MENU */
   .checkbtn {
     display: block;
     position: absolute;
@@ -267,7 +187,6 @@ ul {
     z-index: 1001;
   }
 
-  /* MENU DE NAVEGACION LATERAL */
   nav {
     display: none;
     flex-direction: column;
@@ -283,7 +202,6 @@ ul {
     justify-content: center;
   }
 
-  /* VISIBILIDAD DEL ICONO DE MENU */ 
   #check:checked ~ nav {
     display: flex;
   }
@@ -318,12 +236,5 @@ ul {
 
   nav a:active {
     color: #1f53c5;
-  }
-}
-
-/* ORDNADOR */
-@media screen and (min-width: 1200px) {
-  .flex-item {
-    max-width: calc(100% - 20px);
   }
 }
