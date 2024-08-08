@@ -96,15 +96,15 @@ p {
   display: grid;
   gap: 10px;
   background-color: #e6ecf0;
-  margin: 20px;
+  margin: 30px;
   padding: 10px;
 }
   
   
 .principal-item{
   text-align: center;
-  padding: 20px;
-  font-size: 30px;
+  padding: 10px;
+  font-size: 150px;
   
 }
 .principal-item1 {
@@ -141,9 +141,9 @@ clip-path: circle(60%);
 }
 .containerSecundario{
   display: grid;
-  gap: 20px;
+  gap: 10px;
   background-color: #e6ecf0;
-  margin: 20px;
+  margin: 30px;
   padding: 10px;
 }
 .secundario-item{
@@ -187,7 +187,18 @@ clip-path: circle(60%);
   align-content: center;
 
 }
+#contenedor{
+  text-align:center ;
+  display: grid;
 
+}
+#caja1{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background-color:#928c8c;
+  border: #2c3e50;
+}
 
 
 
