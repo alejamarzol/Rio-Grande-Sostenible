@@ -1,42 +1,29 @@
-window.addEventListener(`load`, ()=>{
-    let lon
-    let lat
+const fetchData = async (product, quantity) => {
+    try {
+        const respuesta = await fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${product}`);
+        const data = await respuesta.json()
+        // console.log(data)
+        const availableProducts = data.results;
+        let products;
+        // console.log(availableProducts);
 
-    let temperaturaValor = document.getElementById (`temperatura-valor`)
-    let temperaturaDescripcion = document.getElementById (`temperatura-descripcion`)
-
-   
-
-    if(navigator.geolocation){
-     navigator.geolocation.getCurrentPosition(posicion =>{
-        //console.log(posicion.coords.latitude)
-        lon = posicion.coords.longitude
-        lat = posicion.coords.longitude
-       // const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=8d9d9825b5930cc6d88546d5da569dee`
-     //console.log(url)
-     const url = `https://api.openweathermap.org/data/2.5/weather?q=ushuaia&appid=8d9d9825b5930cc6d88546d5da569dee`
-     console.log(url)
-    fetch (url)
-.then ((response) => { return response.json () })
- .then ((data) =>{
-    
-    let temp = Math.round(data.main.temp)
-    temperaturaValor.textContent = `${temp} °C `
-    
-    let desc = data.weather [ 0].descripcion
-    temperaturaDescripcion.textContent= desc.toUpperCase ()
-    
-    
-
-
- })   
-    .catch(error =>{
+        if (availableProducts.length > 0) {
+            products = availableProducts.map((element) => {
+                return {
+                    id: element.id,
+                    title: element.title,
+                    price: element.price,
+                    currency_id: element.currency_id,
+                    available_quantity: element.available_quantity,
+                    thumbnail: element.thumbnail,
+                    condition: element.condition,
+                    permalink: element.permalink
+                };
+            });
+        }
+        // console.log(products);
+        imprimirInfo(products, quantity)
+    } catch (error){
         console.log(error)
-    })
-})
+    }
 }
-
-})   
-
-
-
