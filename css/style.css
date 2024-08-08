@@ -207,7 +207,18 @@ clip-path: circle(60%);
   align-content: center;
 
 }
+#contenedor{
+  text-align:center ;
+  display: grid;
 
+}
+#caja1{
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background-color:#928c8c;
+  border: #2c3e50;
+}
 
 /* MEDIA QUERIES - TABLET */
 @media screen and (min-width: 768px) {
