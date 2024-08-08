@@ -98,6 +98,54 @@ clip-path: circle(60%);
 
 }
 
+aside{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90vw;
+  align-items: center;
+  margin: 0 auto;
+  background-color: yellow;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: relative;
+}
+
+.textPublicity{
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-weight: 700;
+}
+
+.product{
+  border: 1px solid gray;
+  width: 15%;
+  height: 13rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.2rem;
+  margin: 0.2rem;
+}
+
+.product h5, .product p, .product a{
+  font-size: 10px;
+}
+
+.product p{
+  font-weight: 500;
+}
+
+.product a{
+  font-weight: 50;
+  text-decoration: none;
+  color: blue;
+}
+
 
 
 /* CELULARES */
