@@ -1,0 +1,26 @@
+{
+  "name": "rio-grande-sostenible",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejamarzol/Rio-Grande-Sostenible.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alejamarzol/Rio-Grande-Sostenible/issues"
+  },
+  "homepage": "https://github.com/alejamarzol/Rio-Grande-Sostenible#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "aos": "^2.3.4",
+    "vite": "^4.4.0"
+  }
+}
