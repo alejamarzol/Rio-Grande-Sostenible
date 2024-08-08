@@ -266,6 +266,14 @@ header i:hover {
   .item4-4{
     font-size: 13px;
   }
+  .item4-4 ul{
+    display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  text-align: justify;
+  list-style: circle; 
+}
+  
   
   .item5-4{
     grid-column: 2;
@@ -286,7 +294,7 @@ header i:hover {
 .image3-4{
     display: block;
     margin: 0 auto;
-    width: 700px;
+    width: 500px;
     height: 300px;
     border-radius: 50%;
 }
