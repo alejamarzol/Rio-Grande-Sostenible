@@ -45,23 +45,13 @@ nav a {
   padding: 10px;  
 }
 
-nav a:hover {
-  color: rgb(182, 66, 182);
-}
 
-nav a:active{
-  color:rgb(106, 18, 68);
-}
 
 .Parrafo1 {
   padding: 16px; 
   background-color: #f9f9f9; 
 }
-.ima-titulo{
-  background-image: url(../img/Aviacion-Naval.jpg);
-  
-  height: 200px;
-}
+
 
 h1 {
   background-image: url(../img/imagen-principal.jpg);
@@ -101,16 +91,6 @@ p {
 }
 
 
-footer {
-  background-color: #2C3E50; 
-  color: white; 
-  padding: 15px; 
-  text-align: center; 
-}
-
-footer span {
-  font-size: 14px; 
-}
 
 .containerPrincipal{
   display: grid;
@@ -220,17 +200,232 @@ clip-path: circle(60%);
   border: #2c3e50;
 }
 
-/* MEDIA QUERIES - TABLET */
-@media screen and (min-width: 768px) {
-  .principal-item{
-    max-width: calc(100% - 50px);
-}
-}
 
-/* MEDIA QUERY - CELULARES */
-@media screen and (min-width: 320px) {
-  .principal-item{
-    min-width: calc(100% - 30px); 
+
+.footertodo {
+  background-color: #154360;
+  text-align: center; 
+  display: block;
+  width: 100%;
+  color: white;
+  padding: 10px;
+     }
+ 
+
+  h5 {
+  font-size:15px;
+  margin: 10px;
+  padding: 20px;
+  color: white;}
+
+  .contactos {
+  justify-content: left;
+  align-items:center ;
+  display:inline-table;
+  padding: 20px;
   }
+  .footerlinck {
+    justify-content: right;
+    align-items:center ;
+    display:inline-table ;
+  }
+
+  footer div a  {
+    color:white;
+    margin: 200%;
+    margin-inline: 30px;
+    font-size: 15px ;
+    text-decoration: none;
+  }
+
+  footer div a:hover {
+    color: rgb(190, 244, 244);
+  }
+  footer div a:active{
+    color:#1f53c5;
+  }
+
+  footer div spam { 
+    margin-inline: 20px; font-size: 25px ;
+   }
+
+ /*registro*/
+.general{
+
+width:100%;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+background-image: url(../img/naty/usuario-registro.jpg);
+background-position: center;
+background-size: cover;
+background-repeat:no-repeat ;
 }
 
+#registro {
+display: inline-block;
+direction:right;
+margin-top: 20px;
+}
+
+.formRegistro {
+padding: 40px;
+margin: 20px;
+margin top: 100px;
+float:inline-end;
+width: 400px;;
+background: #24303c ;
+border-radius: 4px;
+font-family: 'calibri';
+color:white;
+
+  }
+
+h4 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: 'calibri';}
+
+.controles {
+  width: 100%;
+  background:  #24303c;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  border: 1px solid #1f53c5;
+  padding: 12px;
+  font-family: 'calibri';
+  font-size: 18px;
+  color:white;
+}
+.formRegistro p {
+  height: 50px;
+  margin:10px;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 20px;
+}
+.formRegistro a {
+  color: #1f53c5;
+  text-decoration: none;
+}
+.formRegistro a:hover {
+  color: white;
+  text-decoration: inderline;
+}
+.button2{
+  width: 100%;
+  background: #1f53c5;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: 10px;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+/*SESION*/
+
+#sesion {
+display: inline-block;
+justify-items:left;
+padding-right: 20px;
+float: left;
+margin: 20px;
+}
+.formInicioSesion{
+padding: 40px;
+margin: 20px;
+margin top: 100px;
+float:inline-end;
+width: 600px;
+background: #24303c ;
+border-radius: 40px;
+font-family: 'calibri';
+color:white;
+box-shadow: 7px 13px 37px #000;
+ }
+
+.registrobtn {
+  padding: 5px;
+  margin: 10px;
+  width: 120px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  justify-content: center;
+  align-items:center;
+  background:rgb(146, 211, 211) ;
+  border-radius: 20px;
+  font-family: 'calibri';
+  font-size: 16px;
+  color:white;
+  box-shadow: 4px 4px 6px #000;
+  margin-inline-start: 20px;
+
+}
+.Respuesta {
+justify-content: center;
+margin: 20px;
+color:#050b16;
+font-size: 16px; }
+
+.p5 {justify-content: center;
+  margin: 20px;
+  color:#050b16;
+  font-size: 16px;}
+  
+.aclaracion {
+  font-size: 14px; 
+  color:  #555; 
+}
+
+
+/*menu hamburguesa*/
+.menu-icon img {
+  width: 30px;
+  height: 30px;
+  padding-right: 20px;
+  justify-content: center; 
+  align-content: center;
+  margin: 10px;
+}s
+.menu-icon, #check{
+  display: none;
+  justify-content: center;
+  background-color: #154360;
+  color:white;
+  margin-bottom: 0px;
+  scroll-margin-inline: 0px;
+  
+}
+
+
+@media screen and (min-width: 300px) {
+  .flex-item {
+    max-width: calc(100% - 50px);
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  .flex-item {
+    max-width: calc(100% - 20px);  
+  
+}
+
+  @media  (max-width: 800px) {
+    .formRegistro {width:180px; }
+    .formInicioSesion {width:180px;}
+    footer {display: inline-block; }
+    .headerbutton {margin-left: 0;width: 100%;padding-bottom: 30px;}
+    .checkbtn {display: block;}
+   
+   
+    .menu-icon img {display: block;position: fixed;top: 30px;right: 20px;cursor: pointer;justify-content: center;}
+    .nav-menu nav ul{flex-direction: column; display:flex;position:fixed;top: 60px;left:-110%;background: #154360;width:60%;height: auto;right:0%;}
+    .nav-menu nav ul li {padding: 0;display:block; justify-items:center;justify-items: center; align-items: center;margin-inline: 0;margin-left: 0;}
+    .nav-menu nav ul li:last-child {background: none;padding: 1rem;}
+    #check:checked ~ nav ul {left:0;transition: all .50s;justify-content: center;}
+   
+  }
+    
