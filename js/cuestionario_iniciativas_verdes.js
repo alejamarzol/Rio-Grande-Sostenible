@@ -10,13 +10,13 @@ var imagenes = [
 var i = 0;
 var imagen_actual = document.getElementById('imagen-actual');
 
-// funcion q cambia la imagen al hacer click en el boton
-function cambiarImagen() {
-    i++; // paso a la siguiente imagen 
+const cambiarImagen = () => {
+    i++; 
     if (i >= imagenes.length) {
-        i = 0; // vuelve al inicio cuando el array termina
+        i = 0; 
     }
-    imagen_actual.src = imagenes[i]; // actualiza el src de la imagen 
+    imagen_actual.src = imagenes[i]; 
 }
+
 // muestra la primera imagen sin necesidad clickear el boton
 imagen_actual.src = imagenes[i];

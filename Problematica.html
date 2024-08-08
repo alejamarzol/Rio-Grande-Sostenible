@@ -6,8 +6,10 @@
     <title>Contaminación</title>
     <link rel="icon"  href="/img/Logo.ico">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+   <!-- <link rel="stylesheet" href="css/style.css">-->
+    <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/Problematica.css">
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
 </head>
 
 <body>
@@ -37,11 +39,11 @@
 
 <section>
   <!--titulo principal -->
-  <h1>Río Grande Sostenible</h1>
+  <h1 data-aos="fade-up">Río Grande Sostenible</h1>
 
-    <h2>Contaminacio Industrial</h2>
+    <h2 data-aos="fade-right">Contaminacio Industrial</h2>
 
-        <div class="containerTerciario">
+        <div class="containerTerciario" data-aos="fade-left">
         
             <div class="terciario-item1">
                 
@@ -50,7 +52,7 @@
             </div>
             <div class="terciario-item2">
                 <div>
-                    <img class="terciario-ima1" src="img/industria1.jpg" alt="Contaminacio de gas"> 
+                    <img class="terciario-ima1" src="img/industria1.jpg" alt="Contaminacio de gas" data-aos="zoom-in"> 
                 </div>
             <p>
                 Luego de su extracción y almacenamiento en tierra, los hidrocarburos provenientes de pozos ubicados en el
@@ -62,11 +64,11 @@
             <p>Las emisiones de gases tóxicos y la liberación de residuos peligrosos son un problema que requiere una atención inmediata.</p>
             </div>
             <div>
-                <img class="terciario-ima2"  src="img/industria2.jpg" alt="contaminacio de petroleo">
+                <img class="terciario-ima2"  src="img/industria2.jpg" alt="contaminacio de petroleo" data-aos="zoom-in">
             </div>
  </section>
         <section>
-            <div class="container-4">
+            <div class="container-4" data-aos="fade-left">
                 <div class="item1-4">
                     <p>El vertido inadecuado de residuos industriales es otro problema que contribuye a la contaminación en Tierra del Fuego. Estos residuos pueden contaminar el suelo y los cuerpos de agua, afectando tanto la salud humana como la biodiversidad.</p>
                 </div>
@@ -78,20 +80,25 @@
                     <p>Las consecuencias de no tratar adecuadamente los residuos industriales pueden incluir la eutrofización, la acidificación y la contaminación con metales pesados en las aguas, lo que puede envenenar la fauna y la flora. En algunos casos, los tratamientos para eliminar las sustancias más tóxicas o contaminantes pueden ser costosos y depender de la composición específica de los vertidos.</p>
                 </div>
                 <div class="item5-4">
-                    <img class="image1-4" src="img/imagenResiduos.jpeg" alt="industria">
+                    <img class="image1-4" src="img/imagenResiduos.jpeg" alt="industria" data-aos="zoom-in">
                 </div>
                 <div class="item3-4">
-                    <img class="image2-4" src="img/industira-ima.jpeg" alt="industria ejemplo">
+                    <img class="image2-4" src="img/industira-ima.jpeg" alt="industria ejemplo" data-aos="zoom-in">
                 </div>
-                <div class="item4-4">
-                     <p> Los tipos de vertidos industriales que existen. Existe una gran tipología de industrias y dependiendo del tipo estas pueden generar residuos más o menos contaminantes que otros. A continuación, vamos a explicar la clase de residuos que pueden generar algunas de las principales industrias.</p>
+                <div class="item4-4" data-aos="fade-left">
+                    
+                    <p> Los tipos de vertidos industriales que existen. Existe una gran tipología de industrias y dependiendo del tipo estas pueden generar residuos más o menos contaminantes que otros. A continuación, vamos a explicar la clase de residuos que pueden generar algunas de las principales industrias.</p>
+
                     <ul>
                         <li><strong>Textil:</strong> los residuos procedentes de estas industrias pueden contener metales como el cromo, taninos, sustancias tensoactivas, sulfuros, colorantes y tintes, grasas, disolventes, ácidos (acético, fórmico, etc.) y sólidos en suspensión. Dentro de estos sólidos se encuentran las fibras textiles sintéticas que se consideran microplásticos. </li>
                         <li><strong>Automoción:</strong> es una de las industrias más contaminantes. Produce aceites, lubricantes, pinturas, metales, virutas, combustibles y aguas residuales.</li>
                         <li><strong>Naval: </strong> fundamentalmente petróleo, productos químicos, disolventes y pigmentos o colorantes.</li>
     
                     </ul>
-                    <img class="image3-4" src="img/animacionIndustria.jpg" alt="Animacion Industria">
+                    <div>
+                        <img class="image3-4" src="img/animacionIndustria.jpg" alt="Animacion Industria" data-aos="zoom-in">
+                    </div>
+
                 </div>
             </div>
             </section>
@@ -116,4 +123,6 @@
         <span>&copy;2024 Río Grande Sostenible</span>
 </footer>
      <script src="js\Registro.js"></script>
+     <script type="module" src="js/main.js"></script>
 </body>
+</html>

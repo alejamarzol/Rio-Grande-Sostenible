@@ -1,0 +1,234 @@
+/* PROPIO DE INCIO */
+.containerPrincipal{
+  display: grid;
+  gap: 10px;
+  background-color: #e6ecf0;
+  margin: 20px;
+  padding: 10px;
+}
+  
+  
+.principal-item{
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  
+}
+.principal-item1 {
+  text-align: center;
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  padding: 10px;
+}
+.principal-item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  text-align: center;
+}
+
+.principal-item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  text-align: center;
+}
+.imagen-item2{
+clip-path: circle(60%);
+  width: 200px;
+  height: 200px;
+}
+.image-item3{
+  clip-path: circle(60%);
+  width: 200px;
+  height: 200px;
+}
+
+.ima-pie{
+  
+  height: 100px;
+}
+.containerSecundario{
+  display: grid;
+  gap: 20px;
+  background-color: #e6ecf0;
+  margin: 20px;
+  padding: 10px;
+}
+.secundario-item{
+  text-align: center;
+  padding: 10px;
+  font-size: 10px;
+}
+.secundario-item1 {
+  text-align: center;
+  grid-column: 1/ span 2;
+  grid-row: 1;
+  padding: 10px;
+}
+.secundario-item2 {
+  grid-column: 2;
+  grid-row: 2/ span 2;
+ text-align:center;
+}
+  
+.image h1{
+    font-size: 40px;
+}
+
+.image-secu1{
+  clip-path: circle(60%);
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+.image-secu2{
+  clip-path: circle(60%);
+  height: 250px;
+  width: 300px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.containerPrincipal-Videos{
+  display:flex;
+  background-color: #e6ecf0;
+  margin: 30px;
+  padding: 10px;
+  gap: 20px;
+  align-content: center;
+
+}
+
+
+
+/* CELULARES */
+@media screen and (max-width: 576px) {
+    .containerPrincipal, .containerSecundario {
+        display: flex;
+        flex-direction: column; 
+    }
+  
+    .imagen-item2, .image-item3, .image-secu1, .image-secu2 {
+        width: 150px;
+        height: 150px;
+    }
+  
+    .containerPrincipal .text, .containerSecundario .text {
+        display: flex;
+        align-items: center; 
+        margin-bottom: 10px;
+    }
+  
+    .containerPrincipal .text img, .containerSecundario .text img {
+        margin-right: 10px; 
+    }
+  
+    .formRegistro, .formInicioSesion {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) {
+    /* ELEMENTOS EN VERTICL */
+    .containerPrincipal, .containerSecundario {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+  
+    .imagen-item2, .image-item3, .image-secu1, .image-secu2 {
+        width: 400px; 
+        height: 400px;
+        margin: 10px 0; 
+        align-self: center; 
+    }
+  
+    .containerPrincipal .text, .containerSecundario .text {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        text-align: center; 
+        margin-bottom: 20px;
+    }
+  
+    .containerPrincipal .text img, .containerSecundario .text img {
+        margin: 10px 0; 
+        width: 100px; 
+        height: 100px;
+    }
+  
+    .formRegistro, .formInicioSesion {
+      width: 100%;
+      padding: 30px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    /* HACE VISIBLE EL ICONO DE MENU */
+    .checkbtn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* MENU DE NAVEGACION LATERAL */
+    nav {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 250px;
+        height: 100%;
+        background-color: #154360;
+        padding-top: 10px;
+        z-index: 1000;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* VISIBILIDAD DEL ICONO DE MENU */ 
+    #check:checked ~ nav {
+        display: flex;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        height: calc(100% - 60px);
+    }
+    
+    nav ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        margin: 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        color: rgb(190, 244, 244);
+    }
+    
+    nav a:active {
+        color: #1f53c5;
+    }
+}
+  
+  

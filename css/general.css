@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/* TODO LOS CODIGOS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+}
+
+nav {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #154360;  
+    padding: 10px;
+    gap: 10px; 
+    position: fixed; /* lo deja fijo */
+    top: 0; /* lo deja fijo arriba de todo */
+    width: 100%;
+    z-index: 1000;  /* lo pone por encima de todo */
+  }
+  
+/* BARRA DE NAVEGACION */
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    padding: 0;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: rgb(190, 244, 244);
+  }
+  
+  nav a:active {
+    color: #1f53c5;
+  }
+  
+/* MAIN */
+main {
+    background-color: #ddf9f9;
+    text-align: justify;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 10px; 
+    margin-top: 80px;
+  }
+  
+
+/* CABECERA */
+header {
+    display: flex; 
+    background-color: #154360;  
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  header {
+    display: flex; 
+    background-color: #154360;  
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  
+  header nav ul li {
+    float: left;
+    list-style: none;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+header nav ul li {
+    float: left;
+    list-style: none;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;  
+    color: white;  
+    z-index: 1000; 
+    display: block;
+    margin-bottom: 0px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  header nav ul li a span {
+    margin: 0.1px;
+    padding-inline: 10px;
+    margin-inline-start: 1px;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  header i:hover {
+    color: #1f53c5;
+  }
+  
+  .headerbutton {  
+    background-color: #154360;  
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 50px;
+  }
+  
+  
+  /* PARRAFO */
+p {
+    font-size: 16px; 
+    color:  #555; 
+    margin-bottom: 20px; 
+    line-height: 1.5;
+    margin-left: 10px; 
+  }
+  
+  /* TODOS LOS CODIGOS, CREO */
+  h1 {
+    background-image: url(../img/imagen-principal.jpg);
+    border-radius: 5px;
+    height: 8vh;
+    margin-top: 200px;
+    font-size: 30px; 
+    margin: 20px; 
+    text-align:center; 
+    color:azure;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px #2c3e50;
+  }
+  h2{
+    font-size: 20px; 
+    margin: 20px; 
+    text-align:center; 
+    background-color: #2C3E50;
+    color:azure;
+    margin-bottom: 10px;
+  }
+  h3{
+    background-image:url(../img/Aviacion-Naval.jpg);
+    font-size: 20px; 
+    margin: 20px; 
+    text-align:center; 
+   
+    color:#2C3E50;
+    margin-bottom: 10px;
+  
+  }
+  
+  /* PIE DE PAGINA */
+.footertodo {
+    background-color: #154360;
+    text-align: center; 
+    display: block;
+    width: 100%;
+    color: white;
+  }
+  
+  h5 {
+    font-size: 15px;
+    margin: 10px;
+    padding: 20px;
+  }
+  .contactos {
+    justify-content: left;
+    align-items: center;
+    display: inline-table;
+    padding: 20px;
+  }
+  
+  .footerlinck {
+    justify-content: right;
+    align-items: center;
+    display: inline-table;
+  }
+  
+  footer div a {
+    color: white;
+    margin: 200%;
+    margin-inline: 30px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  
+  footer div a:hover {
+    color: rgb(190, 244, 244);
+  }
+  
+  footer div a:active {
+    color: #1f53c5;
+  }
+  
+  footer div span { 
+    margin-inline: 20px; 
+    font-size: 25px;
+  }
+  
+  
+/* TODOS LOS CODIGOS */
+.general {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(../img/naty/usuario-registro.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  #registro {
+    display: inline-block;
+    direction: right;
+    margin-top: 20px;
+  }
+  
+  .formRegistro {
+    padding: 40px;
+    margin: 20px;
+    margin-top: 100px;
+    float: inline-end;
+    width: 400px;
+    background: #24303c;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+  }
+  
+  h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: 'calibri';
+  }
+  
+  .controles {
+    width: 100%;
+    background:  #24303c;
+    border-radius: 4px;
+    margin-bottom: 14px;
+    border: 1px solid #1f53c5;
+    padding: 12px;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: white;
+  }
+  
+  .formRegistro p {
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .formRegistro a {
+    color: #1f53c5;
+    text-decoration: none;
+  }
+  
+  .formRegistro a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  .button2 {
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  
+  #sesion {
+    display: inline-block;
+    justify-items: left;
+    padding-right: 20px;
+    float: left;
+    margin: 20px;
+  }
+  
+  .formInicioSesion {
+    padding: 40px;
+    margin: 20px;
+    margin-top: 100px;
+    float: inline-end;
+    width: 600px;
+    background: #24303c;
+    border-radius: 40px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .registrobtn {
+    padding: 5px;
+    margin: 10px;
+    width: 120px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    background: rgb(146, 211, 211);
+    border-radius: 20px;
+    font-family: 'calibri';
+    font-size: 16px;
+    color: white;
+    box-shadow: 4px 4px 6px #000;
+    margin-inline-start: 20px;
+  }
+  
+  .Respuesta {
+    justify-content: center;
+    margin: 20px;
+    color: white;
+    background-color: #d74343;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'calibri';
+  }
+  
+  .Modal {
+    width: 600px;
+    margin-top: 100px;
+    border-radius: 10px;
+  }
+  
+  .Modal .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #1f53c5;
+  }
+  
+  .Modal .header {
+    background-color: #1f53c5;
+    color: white;
+    padding: 10px;
+  }
+  
+  .Modal .body {
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  .ok {
+    text-align: center;
+    padding: 10px;
+    background: #abf8b1;
+    margin-bottom: 20px;
+  }
+  
+  .form-check-label {
+    display: block;
+  }
+  
+  .headerImg {
+    background-image: url(../img/Aviacion-Naval.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70px;
+  }
+  
+  .header-clip {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 50% 100%, 0% 75%);
+  }
+  
+  /* OCULTA EL CHECK DEL MENU */
+  .checkbtn {
+    display: none; 
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1001; 
+  }
+  
+  /* ICONO DE MENU */
+  .menu-icon img {
+    width: 30px;
+    height: auto;
+  }
+  
+  .menu-icon img {
+    width: 30px;
+    height: 30px;
+    padding-right: 20px;
+    justify-content: center; 
+    align-content: center;
+    margin: 10px;
+  }
+  #check{
+    display: none;
+    justify-content: center;
+    background-color: #154360;
+    color:white;
+    margin-bottom: 0px;
+    scroll-margin-inline: 0px;
+    
+  }
