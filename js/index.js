@@ -27,3 +27,26 @@ const fetchData = async (product, quantity) => {
         console.log(error)
     }
 }
+
+
+const imprimirInfo = (info, quantity) =>{
+    
+    // console.log(info[0]);
+    const aside = document.getElementById('publicity');
+    
+    for(let i=0; i<quantity; i++){
+        const cardProduct = document.createElement('article');
+        cardProduct.innerHTML = `
+            <img src="${info[i].thumbnail}" alt="${info[i].title}"/>
+            <h5>${info[i].title}</h5>
+            <p>$${info[i].price}</p>
+            <a href="${info[i].permalink}" target="_blank">Comprar</a>
+        `;
+        cardProduct.className = 'product';
+        aside.appendChild(cardProduct);
+    }
+}
+
+window.addEventListener('load', function(event){
+    fetchData('vino bianchi', 5);
+});
