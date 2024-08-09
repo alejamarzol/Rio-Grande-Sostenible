@@ -1,52 +1,25 @@
-const fetchData = async (product, quantity) => {
-    try {
-        const respuesta = await fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${product}`);
-        const data = await respuesta.json()
-        // console.log(data)
-        const availableProducts = data.results;
-        let products;
-        // console.log(availableProducts);
+const API_KEY = "6d91fca354786ff4a31b0e0181de84cd";
 
-        if (availableProducts.length > 0) {
-            products = availableProducts.map((element) => {
-                return {
-                    id: element.id,
-                    title: element.title,
-                    price: element.price,
-                    currency_id: element.currency_id,
-                    available_quantity: element.available_quantity,
-                    thumbnail: element.thumbnail,
-                    condition: element.condition,
-                    permalink: element.permalink
-                };
-            });
-        }
-        // console.log(products);
-        imprimirInfo(products, quantity)
-    } catch (error){
-        console.log(error)
-    }
-}
+const fetchData = (position) => {
+  const { latitude, longitude } = position.coords;
+  const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&lat=${latitude}&lon=${longitude}&appid=${API_KEY}`;
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => setWeatherData(data));
+};
 
+const setWeatherData = (data) => {
+  console.log(data);
+  const weatherData = {
+    location: data.name,
+    temperature: `${data.main.temp}°C`,
+  };
+  document.getElementById('city-name').textContent = weatherData.location;
+  document.getElementById('temperature').textContent = weatherData.temperature;
+};
 
-const imprimirInfo = (info, quantity) =>{
-    
-    // console.log(info[0]);
-    const aside = document.getElementById('publicity');
-    
-    for(let i=0; i<quantity; i++){
-        const cardProduct = document.createElement('article');
-        cardProduct.innerHTML = `
-            <img src="${info[i].thumbnail}" alt="${info[i].title}"/>
-            <h5>${info[i].title}</h5>
-            <p>$${info[i].price}</p>
-            <a href="${info[i].permalink}" target="_blank">Comprar</a>
-        `;
-        cardProduct.className = 'product';
-        aside.appendChild(cardProduct);
-    }
-}
+const onload = () => {
+  navigator.geolocation.getCurrentPosition(fetchData);
+};
 
-window.addEventListener('load', function(event){
-    fetchData('vino bianchi', 5);
-});
+window.onload = onload;
