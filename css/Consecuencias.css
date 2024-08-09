@@ -1,34 +1,35 @@
 /* PROPIO DE CONSECUENCIAS */
 .flex-item {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   margin: 20px;
   padding: 10px;
   background-color: #e6ecf0;
+  text-align: center;
 }
 
 .content {
   flex: 1;
-  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
-.imagen_1 {
+.imagen_1, .imagen_2 {
   width: 100%;
-  max-width: 430px;
+  max-width: 100%; 
   height: auto;
   border-radius: 8px;
+  margin: 0;
 }
 
 .image {
-  background-image: url(..\img\imagen\ principal.jpeg);
+  background-image: url(../img/imagen-principal.jpeg); 
   display: flex;
   justify-content: center;
   align-items: center;
   height: 300px;
   width: 100%;
 }
-
 
 section {
   background-color: #f7f2f2;
@@ -41,20 +42,10 @@ p {
   line-height: 1.6;
 }
 
-.imagen_2 {
-  width: 100%;
-  max-width: 560px;
-  margin-top: 15px;
-  height: auto;
-  border-radius: 8px;
-  margin-right: 20px;
-  margin-left: 20px;
-}
-
-/* CELULAR */
-@media (max-width: 576px) {
+/* TABLET */
+@media screen and (min-width: 480px) and (max-width: 785px) {
   .flex-item {
-    flex-direction: column;
+    flex-direction: column; 
     align-items: center;
     text-align: center;
   }
@@ -67,12 +58,19 @@ p {
   .imagen_1, .imagen_2 {
     margin: 0;
   }
-}
 
-/* TABLET */
-@media (max-width: 768px) {
+  
+  header {
+    flex-direction: column;
+  }
+
   .checkbtn {
     display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1001;
   }
 
   nav {
@@ -108,33 +106,47 @@ p {
     width: 100%;
     text-align: center;
     padding: 10px 0;
-  }
-
-  .flex-item {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .content {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-
-  .imagen_1, .imagen_2 {
-    max-width: 100%;
     margin: 0;
   }
 
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+
+  }
+
+  nav a:hover {
+    color: rgb(190, 244, 244);
+  }
+
+  nav a:active {
+    color: #1f53c5;
+  }
+  
 }
 
 /* ORDENADOR */
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .flex-item {
-    flex-direction: row;
+    flex-direction: row; 
+    align-items: flex-start;
+    text-align: left;
   }
 
   .content {
     margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .imagen_1 {
+    max-width: 430px; 
+  }
+
+  .imagen_2 {
+    max-width: 560px; 
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
