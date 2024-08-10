@@ -52,7 +52,7 @@ nav ul {
     font-weight: bold;
     color: rgb(185, 185, 236);
     font-size: 12px; 
-    display: flex;
+    display: block;
     flex-direction: column;
     align-items: center; 
   }

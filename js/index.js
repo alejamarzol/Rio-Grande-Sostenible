@@ -1,4 +1,4 @@
-const API_KEY = "6d91fca354786ff4a31b0e0181de84cd";
+const API_KEY = "d486680234478a837af185a95a74";
 
 const fetchData = (position) => {
   const { latitude, longitude } = position.coords;
