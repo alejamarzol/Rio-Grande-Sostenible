@@ -1,9 +1,4 @@
 /* PROPIO DE INICIATIVAS VERDES */
-.content {
-  flex: 1;
-  margin-right: 20px;
-}
-
 .flex-item {
   display: flex;
   flex-direction: column;
@@ -12,23 +7,29 @@
   padding: 10px;
   background-color: #e6ecf0;
   text-align: center;
+  text-align: justify;
 }
+
 
 .content_1 {
   display: flex;
   flex-direction: row-reverse;
   flex: 1;
+  display: block;
 }
 
 .content_1 p {
   display: flex;
   flex-direction: column;
+  text-align: justify;
+  text-align: center;
 }
 
 .content_1 ul {
   display: flex;
   flex-direction: column;
-  padding-left: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-align: justify;
   list-style: circle;
 }
@@ -38,16 +39,19 @@
 }
 
 .imagen_1 {
+ padding-right: 20px;
   width: 100%;
-  max-width: 420px;
-  height: auto;
+  justify-content: center;
+  align-content: center;
   border-radius: 8px;
-  margin-right: 20px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
 }
 
 .content_2 {
   margin-right: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
 }
 
 .imagen_2 {
@@ -75,6 +79,7 @@ ul {
   margin: 20px;
   padding: 10px;
   background-color: #e6ecf0;
+  
 }
 
 .eco-container .content_1 {
@@ -82,11 +87,13 @@ ul {
   display: flex;
   flex-direction: column;
   margin-right: 10px;
+ 
 }
 
 .eco-container .content_1 p {
   margin: 10px;
   margin-left: 30px;
+  text-align: justify;
 }
 
 .eco-container .image-container {
@@ -136,7 +143,7 @@ ul {
 }
 
 /* TABLET */
-@media screen and (min-width: 480px) and (max-width: 785px) {
+@media screen and (min-width: 480px) and (max-width: px) {
   .eco-container {
     flex-direction: column;
     align-items: center;
@@ -155,16 +162,6 @@ ul {
     width: 100%;
   }
 
-  .content_1 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .imagen_1 {
-    margin-left: 30px;
-    margin-bottom: 20px;
-  }
-
   .content_1 ul {
     margin-top: 20px;
   }
@@ -172,69 +169,5 @@ ul {
   .content_1 ul {
     padding-left: 20px;
     padding-right: 10px;
-  }
-  
-  header {
-    flex-direction: column;
-  }
-
-  .checkbtn {
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-    z-index: 1001;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #154360;
-    padding-top: 10px;
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #check:checked ~ nav {
-    display: flex;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    height: calc(100% - 60px);
-  }
-
-  nav ul li {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    margin: 0;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-  }
-
-  nav a:hover {
-    color: rgb(190, 244, 244);
-  }
-
-  nav a:active {
-    color: #1f53c5;
   }
 }
