@@ -46,15 +46,13 @@ nav ul {
   nav a:active {
     color: #1f53c5;
   }
-  header i:hover {color: #1f53c5;}
-
   #weather-info {
     font-weight: bold;
     color: rgb(185, 185, 236);
-    font-size: 12px; 
+    font-size: 10px; 
     display: block;
     flex-direction: column;
-    align-items: center; 
+    align-items:center; 
   }
   
 /* MAIN */
@@ -80,14 +78,21 @@ header {
     z-index: 1000;
    
   }
+
 .logomenu{display: none;}
   
   header nav ul li {
     float: left;
     list-style: none;
-    justify-content: left;
-    padding: 20px;
     justify-content: center;
+    padding: 10px;
+  }
+  
+header nav ul li {
+    float: left;
+    list-style: none;
+    justify-content: center;
+    padding: 20px;
   }
   
   header nav ul li a {
@@ -96,14 +101,14 @@ header {
     z-index: 1000; 
     display: block;
     margin-bottom: 0px;
-    justify-content: left;
-    align-content: left;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
    text-align: left;
    font-size: 18px;
   }
   
-  header nav ul li a spam {
+  header nav ul li a span {
     margin: 0.1px;
     padding-inline: 10px;
     margin-inline-start: 1px;
@@ -117,15 +122,12 @@ header {
   
   .headerbutton {  
     background-color: #154360;  
-    padding-right: 0;
-    margin: 10px;
     justify-content: center;
     align-content: center;
     height: 50px;
     width: 100%;
-    padding-left: 5px;
-    position: fixed; /* lo deja fijo */
-    top: 20px; /* lo deja fijo arriba de todo */
+    position: fixed;
+    top: 50px;
   }
 
 .itemsNavegacion{
@@ -168,37 +170,19 @@ p {
     margin-bottom: 10px;
   }
   h3{
-    background-image: url(../img/Aviacion-Naval.jpg);
+    background-image:url(../img/Aviacion-Naval.jpg);
     font-size: 20px; 
     margin: 20px; 
-    width: 100%;
-    margin-left: 0;
     text-align:center; 
-    color:#1f53c5;
-    border-radius: 5px;
-    height: 50px;
-    align-content: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   
+    color:#2C3E50;
+    margin-bottom: 10px;
+  
   }
-
-  .flexbox-0 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0;
-    border: 0;
-    width: 100%;
-    height: auto;
-    }
-    
-  div img { margin: 0;
-    border: 0;
-    width: 100%;}
-
+  
   /* PIE DE PAGINA */
 .footertodo {
-    background-color:  #154360;
+    background-color: #154360;
     text-align: center; 
     display: block;
     width: 100%;
@@ -244,7 +228,7 @@ p {
     color: #1f53c5;
   }
   
-  footer div spam { 
+  footer div span { 
     margin-inline: 20px; 
     font-size: 25px;
   }
@@ -266,7 +250,6 @@ p {
     display: inline-block;
     direction: right;
     margin-top: 20px;
-    padding-block-end: 80px;
   }
   
   .formRegistro {
@@ -279,19 +262,8 @@ p {
     border-radius: 4px;
     font-family: 'calibri';
     color: white;
-    
   }
-
-  form {
-    /* Centrar el formulario en la página */
-     margin: 2 auto;
-     width:auto;
-   /* Esquema del formulario */
-     padding: 1%;
-     border: 1px solid #ccc;
-     border-radius: 1em;}
-     
-       
+  
   h4 {
     font-size: 20px;
     margin-bottom: 30px;
@@ -333,12 +305,11 @@ p {
     width: 100%;
     background: #1f53c5;
     border: none;
-    padding: 20px;
+    padding: 10px;
     color: white;
     margin: 10px;
     font-size: 18px;
     margin-bottom: 4px;
-    justify-content: center;
   }
   
   #sesion {
@@ -381,20 +352,15 @@ p {
   
   .Respuesta {
     justify-content: center;
-    color:#050b16;
-    font-size: 16px; 
-    margin-top: 20px;}
-
-  .p5 {justify-content: center;
     margin: 20px;
-    color:#050b16;
-    font-size: 16px;}
-      
-  .aclaracion {
-    font-size: 14px; 
-    color:  #555; 
-    }
-    
+    color: white;
+    background-color: #d74343;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'calibri';
+  }
+  
   .Modal {
     width: 600px;
     margin-top: 100px;
@@ -452,7 +418,10 @@ p {
   }
   
   /* ICONO DE MENU */
-
+  .menu-icon img {
+    width: 30px;
+    height: auto;
+  }
   
   .menu-icon img {
     width: 30px;
@@ -497,4 +466,3 @@ p {
     #check:checked ~ nav ul {left:0;transition: all .50s;justify-content: center;}
    
   }
-    

@@ -1,4 +1,4 @@
-const API_KEY = "d486680234478a837af185a95a74";
+const API_KEY = "8d9d9825b5930cc6d88546d5da569dee";
 
 const fetchData = (position) => {
   const { latitude, longitude } = position.coords;
@@ -22,5 +22,6 @@ const setWeatherData = (data) => {
 const onload = () => {
   navigator.geolocation.getCurrentPosition(fetchData);;
 };
+
 
 window.onload = onload;
