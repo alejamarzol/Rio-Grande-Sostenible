@@ -12,6 +12,7 @@
 .content {
   flex: 1;
   margin-bottom: 20px;
+  text-align: justify;
 }
 
 .imagen_1, .imagen_2 {
@@ -20,22 +21,6 @@
   height: auto;
   border-radius: 8px;
   margin: 0;
-}
-
-.image {
-  background-image: url(../img/imagen-principal.jpeg); 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 300px;
-  width: 100%;
-}
-
-section {
-  background-color: #f7f2f2;
-  padding-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
 }
 
 p {
@@ -57,72 +42,6 @@ p {
 
   .imagen_1, .imagen_2 {
     margin: 0;
-  }
-
-  
-  header {
-    flex-direction: column;
-  }
-
-  .checkbtn {
-    display: block;
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-    z-index: 1001;
-  }
-
-  nav {
-    display: none;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #154360;
-    padding-top: 10px;
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #check:checked ~ nav {
-    display: flex;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
-    align-items: center;
-    justify-content: center;
-    height: calc(100% - 60px);
-  }
-
-  nav ul li {
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-    margin: 0;
-  }
-
-  nav ul li a {
-    display: block;
-    padding: 15px;
-    color: white;
-    text-decoration: none;
-
-  }
-
-  nav a:hover {
-    color: rgb(190, 244, 244);
-  }
-
-  nav a:active {
-    color: #1f53c5;
   }
   
 }
