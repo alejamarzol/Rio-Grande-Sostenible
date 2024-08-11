@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/Consecuencias.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <!--<link rel="stylesheet" href="node_modules/aos/dist/aos.css">-->
 </head>
 
 <body>
@@ -20,8 +20,8 @@
                 <i class="menu-icon"><img src=".\img\naty\menu3.png" alt="menu"></i>
             </label>
         <nav>
+            <img class="logomenu" src="img\Logo.ico" alt="logo">
             <ul>
-            
             <li><a href="index.html"><spam class= "icon-home"></spam>Inicio</a></li>
             <li><a href="Problematica.html"><spam class= "icon-earth"></spam>Problematica</a> </li>
             <li><a href="Consecuencias.html"><spam class= "icon-binoculars"></spam>Consecuencias</a> </li>
@@ -39,7 +39,12 @@
     <main>  
 
             
-        <h1 data-aos="fade-up">Rio Grande Sostenible</h1>
+        <h1 data-aos="fade-up">Rio Grande Sostenible
+            <li class="itemsNavegacion" id="weather-info">
+                <div id="city-name"></div>
+                <div id="temperature"></div>
+              </li>
+        </h1>
      
      <div class="flex-box">
               
@@ -190,5 +195,6 @@
      <script src="js\Registro.js"></script>
      <script src="node_modules/aos/dist/aos.js"></script>
      <script type="module" src="js/main.js"></script>
+     <script src="./js/index.js"></script>
 </body>
 </html>

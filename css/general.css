@@ -76,18 +76,10 @@ header {
     position: fixed;
     top: 0;
     z-index: 1000;
+   
   }
-  header {
-    display: flex; 
-    background-color: #154360;  
-    padding: 0;
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-  }
-  
+
+.logomenu{display: none;}
   
   header nav ul li {
     float: left;
@@ -112,6 +104,8 @@ header nav ul li {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+   text-align: left;
+   font-size: 18px;
   }
   
   header nav ul li a span {
@@ -135,7 +129,13 @@ header nav ul li {
     position: fixed;
     top: 50px;
   }
-  
+
+.itemsNavegacion{
+  justify-content: center;
+  align-content: center;
+  right: auto;
+  color: white;
+  margin-bottom: 10px;}
   
   /* PARRAFO */
 p {
@@ -149,15 +149,17 @@ p {
   /* TODOS LOS CODIGOS, CREO */
   h1 {
     background-image: url(../img/imagen-principal.jpg);
-    border-radius: 5px;
-    height: 8vh;
-    margin-top: 200px;
-    font-size: 30px; 
-    margin: 20px; 
+    height: 15vh;
+    width:100%;
+    font-size: 25px; 
+    align-content: center;
     text-align:center; 
     color:azure;
-    margin-bottom: 10px;
     text-shadow: 2px 2px 5px #2c3e50;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1000;
+    
   }
   h2{
     font-size: 20px; 
@@ -185,6 +187,7 @@ p {
     display: block;
     width: 100%;
     color: white;
+   
   }
   
   h5 {
@@ -203,6 +206,8 @@ p {
     justify-content: right;
     align-items: center;
     display: inline-table;
+    line-height: 1;
+    
   }
   
   footer div a {
@@ -211,6 +216,8 @@ p {
     margin-inline: 30px;
     font-size: 15px;
     text-decoration: none;
+    
+   
   }
   
   footer div a:hover {
@@ -432,4 +439,30 @@ p {
     margin-bottom: 0px;
     scroll-margin-inline: 0px;
     
+  }
+
+  @media  (max-width: 1200px) {
+    .formRegistro {width:200px; }
+    .formInicioSesion {width:200px;}
+    footer div a {align-content: center;margin-right: 10px;}
+    .headerbutton {margin-left: 0;width: 100%;padding-bottom: 30px;}
+    .checkbtn {display: block;}
+    .logomenu  { 
+      max-width: 90px;
+      max-height: 100%;
+      padding-left: 20px;
+      padding-top: 20px;
+      align-content: center;
+      margin-top: 70px;
+      display: block;
+      position: fixed;
+      left: 20px;
+      justify-content: center;}
+   
+    .menu-icon img {display: block;position: fixed;top: 30px;right: 20px;cursor: pointer;justify-content: center;}
+    .nav-menu nav ul{flex-direction: column; display:flex;position:fixed;top: 90px;left:-110%;background: #154360;width:60%;height: auto;right:0%;}
+    .nav-menu nav ul li {padding: 0;display:block; justify-items:center;justify-items: center; align-items: center;margin-inline: 0;margin-left: 0;}
+    .nav-menu nav ul li:last-child {background: none;padding: 1rem;}
+    #check:checked ~ nav ul {left:0;transition: all .50s;justify-content: center;}
+   
   }
