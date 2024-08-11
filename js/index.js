@@ -16,10 +16,11 @@ const setWeatherData = (data) => {
   };
   document.getElementById('city-name').textContent = weatherData.location;
   document.getElementById('temperature').textContent = weatherData.temperature;
+  document.getElementById('weather-info').style.Color="white";
 };
 
 const onload = () => {
-  navigator.geolocation.getCurrentPosition(fetchData);
+  navigator.geolocation.getCurrentPosition(fetchData);;
 };
 
 window.onload = onload;

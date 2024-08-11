@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css\Sostenibiliad-Empresarial.css">
     <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
+    <!--<link rel="stylesheet" href="node_modules/aos/dist/aos.css">-->
     
 </head>
 
@@ -21,8 +21,8 @@
                 <i class="menu-icon"><img src=".\img\naty\menu3.png" alt="menu"></i>
             </label>
         <nav>
+            <img class="logomenu" src="img\Logo.ico" alt="logo">
             <ul>
-            
             <li><a href="index.html"><spam class= "icon-home"></spam>Inicio</a></li>
             <li><a href="Problematica.html"><spam class= "icon-earth"></spam>Problematica</a> </li>
             <li><a href="Consecuencias.html"><spam class= "icon-binoculars"></spam>Consecuencias</a> </li>
@@ -38,7 +38,12 @@
 
     <section>
       <!--titulo principal -->
-      <h1 data-aos="fade-up">Rio Grande Sostenible</h1>
+      <h1 data-aos="fade-up">Rio Grande Sostenible
+        <li class="itemsNavegacion" id="weather-info">
+            <div id="city-name"></div>
+            <div id="temperature"></div>
+          </li>
+      </h1>
 
     <div class="flexbox-0"> 
         <img src="img\naty\mundo2sostenible.png" alt="Mundo Sostenible">
@@ -140,5 +145,8 @@
         <span>&copy;2024 Río Grande Sostenible</span>
 </footer>
      <script src="js\Registro.js"></script>
+     <script src="./js/index.js"></script>
+     <script type="module" src="js/main.js"></script>
+
 </body>
 </html>
