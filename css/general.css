@@ -78,8 +78,26 @@ header {
     z-index: 1000;
    
   }
+<<<<<<< HEAD
+<<<<<<< HEAD
+  header {
+    display: flex; 
+    background-color: #154360;  
+    padding: 0;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+=======
+.logomenu{display: none;}
+>>>>>>> e931c2ea5819c18489281d05a590f0bd73169cdb
+=======
 
 .logomenu{display: none;}
+>>>>>>> 3b641986e0398af76cab13357712f4d0ea2fdb4b
   
   header nav ul li {
     float: left;
@@ -104,8 +122,16 @@ header nav ul li {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
    text-align: left;
    font-size: 18px;
+>>>>>>> e931c2ea5819c18489281d05a590f0bd73169cdb
+=======
+   text-align: left;
+   font-size: 18px;
+>>>>>>> 3b641986e0398af76cab13357712f4d0ea2fdb4b
   }
   
   header nav ul li a span {
@@ -149,17 +175,40 @@ p {
   /* TODOS LOS CODIGOS, CREO */
   h1 {
     background-image: url(../img/imagen-principal.jpg);
+<<<<<<< HEAD
+<<<<<<< HEAD
+    border-radius: 5px;
+    height: 8vh;
+    margin-top: 200px;
+    font-size: 30px; 
+    margin: 20px; 
+=======
+=======
+>>>>>>> 3b641986e0398af76cab13357712f4d0ea2fdb4b
     height: 15vh;
     width:100%;
     font-size: 25px; 
     align-content: center;
+<<<<<<< HEAD
+>>>>>>> e931c2ea5819c18489281d05a590f0bd73169cdb
+=======
+>>>>>>> 3b641986e0398af76cab13357712f4d0ea2fdb4b
     text-align:center; 
     color:azure;
     text-shadow: 2px 2px 5px #2c3e50;
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 3b641986e0398af76cab13357712f4d0ea2fdb4b
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1000;
     
+<<<<<<< HEAD
+>>>>>>> e931c2ea5819c18489281d05a590f0bd73169cdb
+=======
+>>>>>>> 3b641986e0398af76cab13357712f4d0ea2fdb4b
   }
   h2{
     font-size: 20px; 
@@ -439,6 +488,12 @@ p {
     margin-bottom: 0px;
     scroll-margin-inline: 0px;
     
+<<<<<<< HEAD
+<<<<<<< HEAD
+  }
+=======
+=======
+>>>>>>> 3b641986e0398af76cab13357712f4d0ea2fdb4b
   }
 
   @media  (max-width: 1200px) {
@@ -465,4 +520,10 @@ p {
     .nav-menu nav ul li:last-child {background: none;padding: 1rem;}
     #check:checked ~ nav ul {left:0;transition: all .50s;justify-content: center;}
    
+<<<<<<< HEAD
   }
+    
+>>>>>>> e931c2ea5819c18489281d05a590f0bd73169cdb
+=======
+  }
+>>>>>>> 3b641986e0398af76cab13357712f4d0ea2fdb4b
