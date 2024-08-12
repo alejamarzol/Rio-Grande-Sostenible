@@ -7,6 +7,7 @@
     <link rel="icon"  href="/img/Logo.ico">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="fonts.css">
+   <!--<link rel="stylesheet" href="node_modules/aos/dist/aos.css">-->
 </head>
 <body>
     <header>
@@ -25,6 +26,10 @@
         <li><a href="Consecuencias.html"><spam class= "icon-binoculars"></spam>Consecuencias</a> </li>
         <li><a href="iniciativas-verdes.html"><spam class= "icon-leaf"></spam>Iniciativas Verdes</a></li>
         <li><a href="Sostenibilidad-Empresarial.html"><spam class= "icon-stats-dots"></spam>Sostenibilidad Empresarial</a></li><!-- esta pagina -->
+        <li class="itemsNavegacion" id="weather-info">
+            <div id="city-name"></div>
+            <div id="temperature"></div>
+          </li>
         <li><a class="registrobtn" href="Registro.html">🌟Registro</a></li>
         </ul>
     </nav>
@@ -33,19 +38,14 @@
 
 <main>
       <!--titulo principal -->
-  <h1 data-aos="fade-up">Río Grande Sostenible
-    <li class="itemsNavegacion" id="weather-info">
-        <div id="city-name"></div>
-        <div id="temperature"></div>
-      </li>
-  </h1>
+  <h1 data-aos="fade-up">Río Grande Sostenible</h1>
 
 <h2 data-aos="fade-right">¿Querés mantenerte actualizado/@?</h2>
 
 <section class="general">
 
     <!--SESION-->     
-    <section id="sesion"> 
+    <section id="sesion"data-aos="fade-left"> 
         <form action=" " class="formInicioSesion" id="form-InicioSesion">
             <h4>🌟-<strong>INICIO DE SESIÓN</strong></h4>
     
@@ -64,7 +64,7 @@
     </section>
 
     <!--REGISTRO-->
-    <section id="registro">
+    <section id="registro"data-aos="fade-left">
         <form action=" " class="formRegistro" id="form-registro">
             <h4>Dejanos tus datos... <strong>REGISTRATE</strong></h4>
     
@@ -115,6 +115,7 @@
     <script src="js\Administradores.js"></script>
     <script src="./js/index.js"></script>
     <script type="module" src="js/main.js"></script>
+    <script src="node_modules/aos/dist/aos.js"></script>
    
 </body>
 </html>
